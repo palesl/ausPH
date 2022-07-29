@@ -13,9 +13,10 @@ knitr::opts_chunk$set(
 )
 ```
 
-# ausPH
+# ausPH <img src='man/figures/ausPH_hex.png' align="right" height="139" />
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
 The goal of ausPH is to retrieve data from the [Parliamentary Library's Handbook website](https://handbook.aph.gov.au/). The first example is two candidate preferred results by year and by district.
