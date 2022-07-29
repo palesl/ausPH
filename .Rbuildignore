@@ -3,3 +3,5 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^ausPH\.Rproj$
+^LICENSE\.md$
+^README\.Rmd$
