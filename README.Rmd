@@ -32,12 +32,17 @@ devtools::install_github("palesl/ausPH")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+These examples show some simple functionality of the package:
 
 ```{r example}
 library(ausPH)
-## get elections in Australia
+## get elections
 
 getElections(chamber = "all", byelections = T)
+
+## get a list of parliaments
+
+getParliaments()
+
 ```
 
