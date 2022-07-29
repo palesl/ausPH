@@ -6,10 +6,10 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of ausPH is to retrieve data from the [Parliamentary Library’s
-Handbook website](https://handbook.aph.gov.au/). The first example is a
-call to produce a list of elections in the Australian Parliament since
-Federation.
+The goal of ausPH is to retrieve data from the [Parliamentary Handbook
+of the Commonwealth of Australia](https://handbook.aph.gov.au/). The
+first example is a call to produce a list of elections in the Australian
+Parliament since Federation.
 
 ## Installation
 
