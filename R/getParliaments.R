@@ -10,6 +10,11 @@ getParliaments<-function(){
   dat<-rjson::fromJSON(file=url)[["value"]]|>dplyr::bind_rows()|>
     dplyr::select(-ParliamentNext, -PartiesByParliament)|>
     dplyr::distinct()
+  dat$DateElection<- as.Date(dat$DateElection)
+  dat$DateOpening<- as.Date(dat$DateOpening)
+  dat$DateDissolution<- as.Date(dat$DateDissolution)
+  dat$ParliamentEnd<- as.Date(dat$ParliamentEnd)
+
 
   return(dat)
 
