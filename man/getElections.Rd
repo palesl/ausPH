@@ -7,10 +7,10 @@
 getElections(chamber = c("all", "house", "senate"), byelections = FALSE)
 }
 \arguments{
-\item{chamber}{select from c("all","house","senate")}
+\item{chamber}{Select from c("all","house","senate")}
 
-\item{byelections}{choose to include house by elections. if .byelections = TRUE,
-then a list of elections with byelections and their divisions will be returned.}
+\item{byelections}{Choose to include house by-elections. If .byelections = TRUE,
+then a list of elections with by-elections and their divisions is returned.}
 }
 \value{
 a tibble

@@ -1,8 +1,8 @@
 #' Get a list of elections in the Australian Parliament
 #'
-#' @param chamber select from c("all","house","senate")
-#' @param byelections choose to include house by elections. if .byelections = TRUE,
-#' then a list of elections with byelections and their divisions will be returned.
+#' @param chamber Select from c("all","house","senate")
+#' @param byelections Choose to include house by-elections. If .byelections = TRUE,
+#' then a list of elections with by-elections and their divisions is returned.
 #'
 #' @return a tibble
 #' @export

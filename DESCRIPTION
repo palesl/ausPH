@@ -1,6 +1,6 @@
 Package: ausPH
-Title: A Package to Retrieve Data from the Parliamentary Library's Handbook Site
-Version: 0.0.0.9000
+Title: Retrieve Data from the Parliamentary Handbook of the Commonwealth of Australia
+Version: 0.0.0.9001
 Authors@R: 
     person("Pat", "Leslie", , "patrick.leslie@anu.edu.au", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-9218-8981"))
