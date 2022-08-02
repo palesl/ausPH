@@ -1,0 +1,35 @@
+﻿Id,Name,State,Year,ElectionID,Candidate,Party,votes_2cp,margin_2cp,margin_percentage_2cp,swing_2cp,Status,source,Note
+NA,Newcastle,NSW,1998,240,Allan Morris,Labor,"43,917",NA,67.33,6.14,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Newcastle,
+NA,Newcastle,NSW,1998,240,Carrie Jacobi,Greens,"21,306",NA,32.67,32.67,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Newcastle,
+NA,Moncrieff,Qld,1993,238,"Sullivan, Kathy",Liberal,"43,333",NA,62.41,-0.21,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Moncrieff,
+NA,Moncrieff,Qld,1993,238,"Brown, Bob",Labor,"26,101",NA,37.59,0.21,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Moncrieff,
+NA,Farrer,NSW,1990,237,"Fischer, Tim",National,"46,829",NA,67,-0.34,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Farrer,"Only two candidates, first preferences inputed"
+NA,Farrer,NSW,1990,237,"Higgins, Bill",Labor,"22,615",NA,32.57,0.34,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Farrer,"Only two candidates, first preferences inputed"
+NA,Holt,Vic,1984,235,"Duffy, Michael",Labor,"32,946",NA,62,-0.9,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Holt#Elections_in_the_1980s,
+NA,Holt,Vic,1984,235,"Ferwerda, John",Liberal,"20,034",NA,37.8,0.9,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Holt#Elections_in_the_1980s,
+NA,Ryan,Qld,1975,231,"Taylor, Colin",Labor,"24,072",NA,33.5,-6.9,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Ryan#Elections_in_the_1970s,
+NA,Ryan,Qld,1975,231,"Moore, John",Liberal,"47,835",NA,66.5,6.9,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Ryan#Elections_in_the_1970s,
+NA,Herbert,Qld,1961,225,"Harding, Ted",Labor,NA,NA,52.3,3.8,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Herbert#Elections_in_the_1960s,2cp estimated not counted
+NA,Herbert,Qld,1961,225,"Murray, John",Liberal,NA,NA,47.7,-3.8,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Herbert#Elections_in_the_1960s,2cp estimated not counted
+NA,Murray,Vic,1951,221,"McEwen, John",Country,"23,248",NA,61,-2.5,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Murray#Elections_in_the_1950s,"Only two candidates, first preferences inputed"
+NA,Murray,Vic,1951,221,"Anderson, Gordon",Labor,"14,834",NA,39,2.5,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Murray#Elections_in_the_1950s,"Only two candidates, first preferences inputed"
+NA,Newcastle,NSW,1943,218,"Watkins, David",Labor,NA,NA,NA,NA,Elected,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Newcastle,"Incalulable, Watkins won on first preferences."
+NA,Henty,Vic,1943,218,"Coles, Arthur",Independent,NA,NA,55.5,-8,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Henty#Elections_in_the_1940s,2cp estimated not counted
+NA,Henty,Vic,1943,218,"Gullett, Jo",United Australia,NA,NA,44.5,44.5,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Henty#Elections_in_the_1940s,2cp estimated not counted
+NA,Hindmarsh,SA,1943,218,"Makin, Norman",Labor,56359,NA,76.8,11.1,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Hindmarsh,"Only two candidates, first preferences inputed"
+NA,Hindmarsh,SA,1943,218,"Butler, James",United Australia,17030,NA,23.2,-11.1,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Hindmarsh,"Only two candidates, first preferences inputed"
+NA,Kalgoorlie,WA,1940,217,"Green, Albert",Labor,NA,NA,NA,NA,Elected,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Kalgoorlie#Elections_in_the_1940s,unopposed
+NA,Wentworth,NSW,1934,215,"Harrison, Eric",United Australia,NA,NA,71,5.2,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Wentworth#Elections_in_the_1930s,2cp estimated not counted
+NA,Wentworth,NSW,1934,215,"Ormonde, James",Labor (NSW),NA,NA,29,29,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Wentworth#Elections_in_the_1930s,2cp estimated not counted
+NA,Wentworth,NSW,1931,214,"Harrison, Eric",United Australia,35460,NA,65.8,65.8,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Wentworth#Elections_in_the_1930s,"Only two candidates, first preferences inputed"
+NA,Wentworth,NSW,1931,214,"Marks, Walter",United Australia,18434,NA,34.2,34.2,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Wentworth#Elections_in_the_1930s,"Only two candidates, first preferences inputed"
+NA,South Sydney,NSW,1929,213,"Riley, Edward",Labor,34978,NA,66.3,12.1,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_South_Sydney,"Only two candidates, first preferences inputed"
+NA,South Sydney,NSW,1929,213,"Adkins, William",Nationalist,17782,NA,33.7,-12.1,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_South_Sydney,"Only two candidates, first preferences inputed"
+NA,South Sydney,NSW,1928,212,"Riley, Edward",Labor,25915,NA,54.2,3.1,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_South_Sydney,"Only two candidates, first preferences inputed"
+NA,South Sydney,NSW,1928,212,"Baker, George",Nationalist,21874,NA,45.8,-3.1,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_South_Sydney,"Only two candidates, first preferences inputed"
+NA,South Sydney,NSW,1925,211,"Riley, Edward",Labor,22393,NA,51.1,-7.8,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_South_Sydney,"Only two candidates, first preferences inputed"
+NA,South Sydney,NSW,1925,211,"Baker, George",Nationalist,21411,NA,48.9,12.4,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_South_Sydney,"Only two candidates, first preferences inputed"
+NA,South Sydney,NSW,1922,210,"Riley, Edward",Labor,NA,NA,61.7,5.2,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_South_Sydney,2cp estimated not counted
+NA,South Sydney,NSW,1922,210,"Moore, Robert",Nationalist,NA,NA,38.3,-5.2,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_South_Sydney,2cp estimated not counted
+NA,Lilley,NA,1922,210,"Mackay, George",Nationalist,19842,NA,65.2,3.2,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Lilley,"Only two candidates, first preferences inputed"
+NA,Lilley,NA,1922,210,"Costello, Alexander",Independent,10576,NA,34.8,34.8,NA,https://en.wikipedia.org/wiki/Electoral_results_for_the_Division_of_Lilley,"Only two candidates, first preferences inputed"

@@ -62,4 +62,51 @@ getParliaments()
 #>  9     9 Ninth… 1922-12-16   1922-02-28  1925-10-03      1925-11-13    Ninth Pa…
 #> 10    10 Tenth… 1925-11-14   1926-01-13  1928-10-09      1928-11-16    Tenth Pa…
 #> # … with 37 more rows
+
+## get two candidate preferred since 1919
+
+get2CP()
+#> Rows: 8978 Columns: 14
+#> ── Column specification ────────────────────────────────────────────────────────
+#> Delimiter: ","
+#> chr (5): Name, State, Candidate, Party, Status
+#> dbl (7): Id, Year, ElectionID, votes_2cp, margin_2cp, margin_percentage_2cp,...
+#> lgl (2): source, Note
+#> 
+#> ℹ Use `spec()` to retrieve the full column specification for this data.
+#> ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+#> Rows: 8978 Columns: 14
+#> ── Column specification ────────────────────────────────────────────────────────
+#> Delimiter: ","
+#> chr (5): Name, State, Candidate, Party, Status
+#> dbl (7): Id, Year, ElectionID, votes_2cp, margin_2cp, margin_percentage_2cp,...
+#> lgl (2): source, Note
+#> 
+#> ℹ Use `spec()` to retrieve the full column specification for this data.
+#> ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+#> Rows: 8978 Columns: 14
+#> ── Column specification ────────────────────────────────────────────────────────
+#> Delimiter: ","
+#> chr (5): Name, State, Candidate, Party, Status
+#> dbl (7): Id, Year, ElectionID, votes_2cp, margin_2cp, margin_percentage_2cp,...
+#> lgl (2): source, Note
+#> 
+#> ℹ Use `spec()` to retrieve the full column specification for this data.
+#> ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+#> [1] "Notes contain information on results missing from the parliamentary handbook"
+#> # A tibble: 26,934 × 14
+#>       Id Name     State  Year ElectionID Candidate    Party votes_2cp margin_2cp
+#>    <dbl> <chr>    <chr> <dbl>      <dbl> <chr>        <chr>     <dbl>      <dbl>
+#>  1 24373 Adelaide SA     2019        403 GEORGANAS, … Labor     62362      17543
+#>  2 24373 Adelaide SA     2019        403 OSBORN, Sha… Libe…     44819     -17543
+#>  3 24360 Aston    Vic    2019        403 TUDGE, Alan  Libe…     60180      20270
+#>  4 24360 Aston    Vic    2019        403 PETHIYAGODA… Labor     39910     -20270
+#>  5 24359 Ballarat Vic    2019        403 VO, Tim      Libe…     40068     -22547
+#>  6 24359 Ballarat Vic    2019        403 KING, Cathe… Labor     62615      22547
+#>  7 24297 Banks    NSW    2019        403 COLEMAN, Da… Libe…     51609      11488
+#>  8 24297 Banks    NSW    2019        403 GAMBIAN, Ch… Labor     40121     -11488
+#>  9 24372 Barker   SA     2019        403 PASIN, Tony  Libe…     72851      40036
+#> 10 24372 Barker   SA     2019        403 O'BRIEN, Mat Labor     32815     -40036
+#> # … with 26,924 more rows, and 5 more variables: margin_percentage_2cp <dbl>,
+#> #   swing_2cp <dbl>, Status <chr>, source <lgl>, Note <lgl>
 ```

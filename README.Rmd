@@ -44,5 +44,8 @@ getElections(chamber = "all", byelections = T)
 
 getParliaments()
 
+## get two candidate preferred since 1919
+
+get2CP()
 ```
 

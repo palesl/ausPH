@@ -5,3 +5,5 @@
 ^ausPH\.Rproj$
 ^LICENSE\.md$
 ^README\.Rmd$
+^prebuiltelectionscrape\.R$
+^script_2cp_2001\.R$

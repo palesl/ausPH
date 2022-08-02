@@ -1,0 +1,327 @@
+Id,Name,State,Year,ElectionID,Candidate,Party,votes_2cp,margin_2cp,margin_percentage_2cp,swing_2cp,Status,source,Note
+NA,Eden-Monaro,NA,2020,278,"McBAIN,  Kristy",Labor,47835,735,50.39,-0.46,Elected,NA,NA
+NA,Eden-Monaro,NA,2020,278,"KOTVOJS,  Fiona",Liberal,47100,-735,49.61,0.46,,NA,NA
+NA,Groom,NA,2020,279,"HAMILTON,  Garth",Liberal National Party of Queensland,57875,29609,67.19,-3.29,Elected,NA,NA
+NA,Groom,NA,2020,279,"MEIBUSCH,  Chris",Australian Labor Party,28266,-29609,32.81,3.29,,NA,NA
+NA,Fremantle,NA,2018,273,"WILSON,  Josh",Australian Labor Party,46375,29507,73.33,73.33,Elected,NA,NA
+NA,Fremantle,NA,2018,273,"GRAY,  John",Liberal Democrats,16868,-29507,26.67,26.67,,NA,NA
+NA,Longman,NA,2018,274,"LAMB,  Susan",Australian Labor Party,48116,7864,54.45,3.66,Elected,NA,NA
+NA,Longman,NA,2018,274,"RUTHENBERG,  Trevor",Liberal National Party of Queensland,40252,-7864,45.55,-3.66,,NA,NA
+NA,Batman,NA,2018,271,"KEARNEY,  Ged",Australian Labor Party,46446,7488,54.38,3.35,Elected,NA,NA
+NA,Batman,NA,2018,271,"BHATHAL,  Alex",The Greens,38958,-7488,45.62,-3.35,,NA,NA
+NA,Braddon,NA,2018,272,"WHITELEY,  Brett",Liberal,29938,-2904,47.69,-0.11,,NA,NA
+NA,Braddon,NA,2018,272,"KEAY,  Justine",Australian Labor Party,32842,2904,52.31,0.11,Elected,NA,NA
+NA,Mayo,NA,2018,275,"DOWNER,  Georgina",Liberal,37687,-13355,42.47,-2.56,,NA,NA
+NA,Mayo,NA,2018,275,"SHARKIE,  Rebekha",Centre Alliance,51042,13355,57.53,2.56,Elected,NA,NA
+NA,Perth,NA,2018,276,"GORMAN,  Patrick",Australian Labor Party,36601,15198,63.1,63.1,Elected,NA,NA
+NA,Perth,NA,2018,276,"PERKS,  Caroline",The Greens (WA),21403,-15198,36.9,36.9,,NA,NA
+NA,Wentworth,NA,2018,277,"SHARMA,  Dave",Liberal,37138,-1850,48.78,48.78,,NA,NA
+NA,Wentworth,NA,2018,277,"PHELPS,  Kerryn",Independent,38988,1850,51.22,51.22,Elected,NA,NA
+NA,New England,NA,2017,269,"JOYCE,  Barnaby",The Nationals,64664,41505,73.63,7.21,Elected,NA,NA
+NA,New England,NA,2017,269,"EWINGS,  David",Labor,23159,-41505,26.37,-7.21,,NA,NA
+NA,Bennelong,NA,2017,270,"ALEXANDER,  John",Liberal,46179,8213,54.88,-4.84,Elected,NA,NA
+NA,Bennelong,NA,2017,270,"KENEALLY,  Kristina",Labor,37966,-8213,45.12,4.84,,NA,NA
+NA,Canning,NA,2015,267,"HASTIE,  Andrew",Liberal,46772,8909,55.26,-6.55,Elected,NA,NA
+NA,Canning,NA,2015,267,"KEOGH,  Matt",Australian Labor Party,37863,-8909,44.74,6.55,,NA,NA
+NA,North Sydney,NA,2015,268,"ZIMMERMAN,  Trent",Liberal,45848,15575,60.23,60.23,Elected,NA,NA
+NA,North Sydney,NA,2015,268,"RUFF,  Stephen",Independent,30273,-15575,39.77,39.77,,NA,NA
+NA,Griffith,NA,2014,266,"BUTLER,  Terri",Australian Labor Party (State of Queensland),40229,2735,51.76,-1.25,Elected,NA,NA
+NA,Griffith,NA,2014,266,"GLASSON,  Bill",Liberal National Party of Queensland,37494,-2735,48.24,1.25,,NA,NA
+NA,Higgins,NA,2009,265,"O'DWYER,  Kelly",Liberal,40203,13659,60.23,60.23,Elected,NA,NA
+NA,Higgins,NA,2009,265,"HAMILTON,  Clive",The Greens,26544,-13659,39.77,39.77,,NA,NA
+NA,Bradfield,NA,2009,264,"GEMMELL,  Susie",The Greens,24831,-20886,35.2,35.2,,NA,NA
+NA,Bradfield,NA,2009,264,"FLETCHER,  Paul William",Liberal,45717,20886,64.8,64.8,Elected,NA,NA
+NA,Lyne,NA,2008,263,"OAKESHOTT,  Robert",Independent,54770,35393,73.87,73.87,Elected,NA,NA
+NA,Lyne,NA,2008,263,"DREW,  Rob",Nationals,19377,-35393,26.13,26.13,,NA,NA
+NA,Mayo,NA,2008,262,"VONOW,  Lynton",The Greens,34879,-4502,46.97,46.97,,NA,NA
+NA,Mayo,NA,2008,262,"BRIGGS,  Jamie",Liberal,39381,4502,53.03,53.03,Elected,NA,NA
+NA,Gippsland,NA,2008,261,"McCUBBIN,  Darren",Australian Labor Party,31641,-19970,38.01,-6.08,,NA,NA
+NA,Gippsland,NA,2008,261,"CHESTER,  Darren",The Nationals,51611,19970,61.99,6.08,Elected,NA,NA
+NA,Werriwa,NA,2005,391,"Young, James",Independent,20106,-26917,29.95,0,,NA,NA
+NA,Werriwa,NA,2005,391,"HAYES, Chris",Labor,47023,26917,70.05,0,Elected,NA,NA
+NA,Cunningham,NA,2002,298,"Organ, Michael",Greens,35160,2996,52.23,0,,NA,NA
+NA,Cunningham,NA,2002,298,"Bird, Sharon",Labor,32164,-2996,47.77,0,Elected,NA,NA
+NA,Aston,NA,2001,249,"Pearce, Chris",Lib,39299,908,50.58,-3.8,Elected,NA,NA
+NA,Aston,NA,2001,249,"Boland, Kieran",Labor,38391,-908,49.42,3.8,,NA,NA
+NA,Ryan,NA,2001,374,"Short, Leonie",Labor,37834,255,50.17,9.7,,NA,NA
+NA,Ryan,NA,2001,374,"Tucker, Bob",Lib,37579,-255,49.83,-9.7,Elected,NA,NA
+NA,Isaacs,NA,2000,339,"Fletcher, Haydn",Democrats,20718,-19557,33.97,0,,NA,NA
+NA,Isaacs,NA,2000,339,"CORCORAN, Ann",Labor,40275,19557,66.03,0,Elected,NA,NA
+NA,Holt,NA,1999,336,"Morgan, Polly",Democrats,20650,-32599,27.94,0,,NA,NA
+NA,Holt,NA,1999,336,"BYRNE, Anthony",Labor,53249,32599,72.06,0,Elected,NA,NA
+NA,Fraser,NA,1997,322,"Dargavel, Steve",Labor,34279,16018,65.24,0,Elected,NA,NA
+NA,Fraser,NA,1997,322,"Hill, Cheryl",Independent,18261,-16018,34.76,0,,NA,NA
+NA,Lindsay,NA,1996,348,"Kelly, Jackie",Liberal (1946-),38442,2354,26.48,0,Elected,NA,NA
+NA,Lindsay,NA,1996,348,"Free, Ross",Labor,36088,-2354,24.86,0,,NA,NA
+NA,Lindsay,NA,1996,348,"Kelly, Jackie",Lib,39941,1499,27.52,0,Elected,NA,NA
+NA,Lindsay,NA,1996,348,"Free, Hon",Labor,30684,-7758,21.14,0,,NA,NA
+NA,Blaxland,NA,1996,280,"Korovin, Nick",Liberal (1946-),26056,-18272,19.39,0,,NA,NA
+NA,Blaxland,NA,1996,280,"Keating, Paul",Labor,44328,18272,32.99,0,Elected,NA,NA
+NA,Blaxland,NA,1996,280,"Hutchinson, John",Independent,19800,-6256,14.74,0,,NA,NA
+NA,Blaxland,NA,1996,280,"Hatton, Michael",Labor,44188,18132,32.88,0,Elected,NA,NA
+NA,Canberra,NA,1995,288,"Robinson, Sue",Labor,36577,-11095,43.42,-16.2,Elected,NA,NA
+NA,Canberra,NA,1995,288,"Smyth, Brendan",Lib,47672,11095,56.58,16.2,,NA,NA
+NA,Wentworth,NA,1995,386,"Matson, Murray",Greens,19793,-18459,34.1,0,,NA,NA
+NA,Wentworth,NA,1995,386,"Thomson, Andrew",Lib,38252,18459,65.9,0,Elected,NA,NA
+NA,Warringah,NA,1994,383,"Abbott, Tony",Lib,39581,16793,63.46,0,Elected,NA,NA
+NA,Warringah,NA,1994,383,"Halnan, Judith",Independent,22788,-16793,36.54,0,,NA,NA
+NA,Werriwa,NA,1994,390,"Latham, Mark",Labor,35972,11472,59.49,-6.3,Elected,NA,NA
+NA,Werriwa,NA,1994,390,"Lynn, Charlie",Lib,24500,-11472,40.51,6.3,,NA,NA
+NA,Bonython,NA,1994,281,"Evans, Martyn",Labor,36013,8729,56.9,-7.4,Elected,NA,NA
+NA,Bonython,NA,1994,281,"Markwell, Andy",Lib,27284,-8729,43.1,7.4,,NA,NA
+NA,Mackellar,NA,1994,351,"Ellis, Bob",Independent,26587,-13741,39.73,0,,NA,NA
+NA,Mackellar,NA,1994,351,"Bishop, Bronwyn",Lib,40328,13741,60.27,0,Elected,NA,NA
+NA,Kooyong,NA,1994,345,"Georgiou, Petro",Lib,36964,16198,64.03,0,Elected,NA,NA
+NA,Kooyong,NA,1994,345,"Singer, Dr",Greens,20766,-16198,35.97,0,,NA,NA
+NA,Fremantle,NA,1994,323,"Hourn, Geoff",Lib,25715,-11030,41.17,-1,,NA,NA
+NA,Fremantle,NA,1994,323,"LAWRENCE, Hon",Labor,36745,11030,58.83,1,Elected,NA,NA
+NA,Wills,NA,1992,393,"Kardamitsis, Bill",Labor,21772,-19936,34.3,0,Elected,NA,NA
+NA,Wills,NA,1992,393,"Cleary, Phil",Independent,41708,19936,65.7,0,,NA,NA
+NA,Menzies,NA,1991,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Gwydir,NA,1989,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Port Adelaide,NA,1988,368,"Fuller, Judy",Lib,28276,-6609,44.77,11.1,,NA,NA
+NA,Port Adelaide,NA,1988,368,"Sawford, Rod",Labor,34885,6609,55.23,-11.1,Elected,NA,NA
+NA,Oxley,NA,1988,362,"Cooke, David",Lib,27134,-3571,46.91,11.8,,NA,NA
+NA,Oxley,NA,1988,362,"Scott, Les",Labor,30705,3571,53.09,-11.8,Elected,NA,NA
+NA,Groom,NA,1988,329,"Taylor, Bill",Lib,38651,15380,62.42,0,,NA,NA
+NA,Groom,NA,1988,329,"Russell, David",Nationals,23271,-15380,37.58,0,Elected,NA,NA
+NA,Adelaide,NA,1988,247,"Farrell, Don",Labor,28967,-2228,48.15,-8.4,Elected,NA,NA
+NA,Adelaide,NA,1988,247,"Pratt, Mike",Lib,31195,2228,51.85,8.4,,NA,NA
+NA,Scullin,NA,1986,375,"Cichello, Domenic",Lib,13770,-23792,26.83,4.4,,NA,NA
+NA,Scullin,NA,1986,375,"Jenkins, Harry",Labor,37562,23792,73.17,-4.4,Elected,NA,NA
+NA,Richmond,NA,1984,370,"Blunt, Charles",Nationals,31917,7987,23.52,0,Elected,NA,NA
+NA,Richmond,NA,1984,370,"Woldring, Klaas",Labor,23930,-7987,17.64,0,,NA,NA
+NA,Richmond,NA,1984,370,"Blunt, Charles",Nationals,44528,12611,32.82,-0.1,Elected,NA,NA
+NA,Richmond,NA,1984,370,"Carmont, Peter",Labor,35309,3392,26.02,0.1,,NA,NA
+NA,Corangamite,NA,1984,293,"O'Connor, Gavan",Labor,28660,-4226,22,0,,NA,NA
+NA,Corangamite,NA,1984,293,"McArthur, Stewart",Liberal (1946-),32886,4226,25.24,0,Elected,NA,NA
+NA,Corangamite,NA,1984,293,"McArthur, Stewart",Lib,40837,12177,31.35,1.2,Elected,NA,NA
+NA,Corangamite,NA,1984,293,"O'Connor, Gavan",Labor,27893,-767,21.41,-1.2,,NA,NA
+NA,Hughes,NA,1984,337,"Mason, Cliff",Liberal (1946-),25052,-7465,19.62,0,,NA,NA
+NA,Hughes,NA,1984,337,"Tickner, Robert",Labor,32517,7465,25.47,0,Elected,NA,NA
+NA,Hughes,NA,1984,337,"Mason, Clifford",Lib,25956,904,20.33,5.3,,NA,NA
+NA,Hughes,NA,1984,337,"Tickner, Robert",Labor,44162,19110,34.59,-5.3,Elected,NA,NA
+NA,Bruce,NA,1983,286,"O'Connor, Heather",Labor,37442,-1102,24.98,0,,NA,NA
+NA,Bruce,NA,1983,286,"Snedden, Sir",Liberal (1946-),38544,1102,25.72,0,Elected,NA,NA
+NA,Bruce,NA,1983,286,"Aldred, Kenneth",Lib,40259,2817,26.86,3.8,Elected,NA,NA
+NA,Bruce,NA,1983,286,"O'Connor, Heather",Labor,33644,-3798,22.45,-3.8,,NA,NA
+NA,Moreton,NA,1983,358,"Killen, Sir",Liberal (1946-),32728,2022,26.44,0,Elected,NA,NA
+NA,Moreton,NA,1983,358,"Robson, Barbara",Labor,30706,-2022,24.81,0,,NA,NA
+NA,Moreton,NA,1983,358,"Cameron, Donald",Lib,31882,-846,25.76,1.2,Elected,NA,NA
+NA,Moreton,NA,1983,358,"Robson, Barbara",Labor,28448,-4280,22.99,-1.2,,NA,NA
+NA,Wannon,NA,1983,381,"Fraser, Malcolm",Liberal (1946-),38909,12251,30.03,0,Elected,NA,NA
+NA,Wannon,NA,1983,381,"Genardini, Nancy",Labor,26658,-12251,20.58,0,,NA,NA
+NA,Wannon,NA,1983,381,"Genardini, Nancy",Labor,25060,-13849,19.34,-1.1,,NA,NA
+NA,Wannon,NA,1983,381,"Hawker, David",Lib,38930,21,30.05,1.1,Elected,NA,NA
+NA,Flinders,NA,1982,320,"Reith, Peter",Lib,39804,3528,52.32,-2.3,Elected,NA,NA
+NA,Flinders,NA,1982,320,"Ward, Rogan",Labor,36276,-3528,47.68,2.3,,NA,NA
+NA,Lowe,NA,1982,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Curtin,NA,1981,300,"Crouch, John",Labor,21732,-5330,44.54,6.8,,NA,NA
+NA,Curtin,NA,1981,300,"Rocher, Allan",Lib,27062,5330,55.46,-6.8,Elected,NA,NA
+NA,Boothby,NA,1981,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Wentworth,NA,1981,385,"Coleman, Peter",Lib,23928,5919,50.6,-9.6,Elected,NA,NA
+NA,Wentworth,NA,1981,385,"Tickner, Robert",Labor,18009,-5919,38.09,9.6,,NA,NA
+NA,Wentworth,NA,1981,385,"Wentworth, Katherine",Independent,5347,-18581,11.31,0,,NA,NA
+NA,McPherson,NA,1981,355,"Sheil, Dr",NCP,24715,-21621,34.78,0,,NA,NA
+NA,McPherson,NA,1981,355,"White, Peter",Lib,46336,21621,65.22,0,Elected,NA,NA
+NA,Grayndler,NA,1979,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Werriwa,NA,1978,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Cunningham,NA,1977,297,"Griffin, Thomas",Liberal (1946-),26880,-14637,39.3,0,,NA,NA
+NA,Cunningham,NA,1977,297,"West, Stewart",Labor,41517,14637,60.7,0,Elected,NA,NA
+NA,Bass,NA,1975,255,"McLaughlin, Michael",Labor,16140,-12677,35.9,0,,NA,NA
+NA,Bass,NA,1975,255,"Newman, Kevin",Liberal (1946-),28817,12677,64.1,0,Elected,NA,NA
+NA,Parramatta,NA,1973,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Murray,NA,1971,359,"Hunter, William",Lib,10842,-12166,23.65,-21.5,,NA,NA
+NA,Murray,NA,1971,359,"Lloyd, Bruce",Country,23008,12166,50.18,0,Elected,NA,NA
+NA,Murray,NA,1971,359,"Riordan, John",Labor,12003,1161,26.18,21.5,,NA,NA
+NA,Australian Capital Territory,NA,1970,245,"Enderby, Keppel",Labor,32690,8815,57.79,-13.4,Elected,NA,NA
+NA,Australian Capital Territory,NA,1970,245,"Hermes, Clarence",Lib,23875,-8815,42.21,13.4,,NA,NA
+NA,Chisholm,NA,1970,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Curtin,NA,1969,299,"Garland, Victor",Liberal (1946-),29966,10071,60.1,0,Elected,NA,NA
+NA,Curtin,NA,1969,299,"Williamson, John",Labor,19895,-10071,39.9,0,,NA,NA
+NA,Bendigo,NA,1969,260,"Kennedy, David",Labor,25859,2927,27.82,0,Elected,NA,NA
+NA,Bendigo,NA,1969,260,"Lee, Mervyn",Liberal (1946-),22932,-2927,24.67,0,,NA,NA
+NA,Bendigo,NA,1969,260,"Cambridge, Rodney",Lib,21751,-4108,23.4,2.2,,NA,NA
+NA,Bendigo,NA,1969,260,"Kennedy, David",Labor,22421,-3438,24.12,-2.2,Elected,NA,NA
+NA,Gwydir,NA,1969,332,"Hunt, Ralph",Country,24082,2726,28.38,0,Elected,NA,NA
+NA,Gwydir,NA,1969,332,"Nott, Roger",Labor,21356,-2726,25.17,0,,NA,NA
+NA,Gwydir,NA,1969,332,"Hunt, Ralph",Country,21113,-2969,24.88,-7.7,Elected,NA,NA
+NA,Gwydir,NA,1969,332,"Nott, Roger",Labor,18293,-5789,21.56,7.7,,NA,NA
+NA,Higgins,NA,1968,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Corio,NA,1967,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Riverina,NA,1963,372,"Roberton, Hugh",Country,23361,5952,29.68,0,Elected,NA,NA
+NA,Riverina,NA,1963,372,"Ward, Jack",Labor,17409,-5952,22.12,0,,NA,NA
+NA,Riverina,NA,1963,372,"ARMSTRONG, Adam",Country,21371,-1990,27.15,4.6,Elected,NA,NA
+NA,Riverina,NA,1963,372,"Ward, John",Labor,16561,-6800,21.04,2.1,,NA,NA
+NA,Kooyong,NA,1963,344,"Menzies, Sir",Liberal (1946-),35014,22776,74.1,0,Elected,NA,NA
+NA,Kooyong,NA,1963,344,"White, Robert",Labor,12238,-22776,25.9,0,,NA,NA
+NA,Dawson,NA,1963,305,"Everingham, Doug",Labor,16337,-4797,21.95,0,,NA,NA
+NA,Dawson,NA,1963,305,"Shaw, George",Country,21134,4797,28.4,0,Elected,NA,NA
+NA,Dawson,NA,1963,305,"Fordyce, John",Country,16572,235,22.27,-6.9,Elected,NA,NA
+NA,Dawson,NA,1963,305,"PATTERSON, Dr",Labor,20372,4035,27.38,13.7,,NA,NA
+NA,Denison,NA,1963,308,"Finlay, Donald",Labor,14433,-5015,42.6,0,,NA,NA
+NA,Denison,NA,1963,308,"Townley, Athol",Liberal (1946-),19448,5015,57.4,0,Elected,NA,NA
+NA,Angas,NA,1963,248,"Downer, Alec",Liberal (1946-),25788,10116,32.08,0,Elected,NA,NA
+NA,Angas,NA,1963,248,"Nielsen, Robert",Labor,15672,-10116,19.5,0,,NA,NA
+NA,Angas,NA,1963,248,"Giles, Geoffrey",Lib,23468,-2320,29.2,-1.6,Elected,NA,NA
+NA,Angas,NA,1963,248,"Nielsen, Robert",Labor,15452,-10336,19.22,4.2,,NA,NA
+NA,Robertson,NA,1963,373,"Brown, Bob",Labor,24976,-4463,45.9,0,,NA,NA
+NA,Robertson,NA,1963,373,"Dean, Roger",Liberal (1946-),29439,4463,54.1,0,Elected,NA,NA
+NA,Parramatta,NA,1963,366,"Barwick, Sir",Liberal (1946-),34150,11761,60.4,0,Elected,NA,NA
+NA,Parramatta,NA,1963,366,"McLaren, Maxwell",Labor,22389,-11761,39.6,0,,NA,NA
+NA,East Sydney,NA,1961,315,"Folbigg, John",Liberal (1946-),9116,-14210,28.1,0,,NA,NA
+NA,East Sydney,NA,1961,315,"Ward, Eddie",Labor,23326,14210,71.9,0,Elected,NA,NA
+NA,Grey,NA,1961,327,"Dodgson, Arthur",Liberal (1946-),17431,-7447,41.2,0,,NA,NA
+NA,Grey,NA,1961,327,"Russell, Edgar",Labor,24878,7447,58.8,0,Elected,NA,NA
+NA,Batman,NA,1961,257,"Bird, Alan",Labor,23021,4488,55.4,0,Elected,NA,NA
+NA,Batman,NA,1961,257,"Skeggs, Bruce",Liberal (1946-),18533,-4488,44.6,0,,NA,NA
+NA,Bendigo,NA,1958,259,"Clarey, Percy",Labor,21598,266,25.35,0,Elected,NA,NA
+NA,Bendigo,NA,1958,259,"Snell, Henry",Liberal (1946-),21332,-266,25.04,0,,NA,NA
+NA,Bendigo,NA,1958,259,"Beaton, Noel",Labor,21198,-400,24.88,-0.1,Elected,NA,NA
+NA,Bendigo,NA,1958,259,"Snell, Henry",Lib,21065,-533,24.73,0.1,,NA,NA
+NA,Calare,NA,1958,287,"Howse, John",Liberal (1946-),22557,6261,29.77,0,Elected,NA,NA
+NA,Calare,NA,1958,287,"Rygate, Robert",Labor,16296,-6261,21.51,0,,NA,NA
+NA,Calare,NA,1958,287,"England, John",Country,21824,-733,28.81,1,,NA,NA
+NA,Calare,NA,1958,287,"Serisier, Leroy",Labor,15082,-7475,19.91,-1,,NA,NA
+NA,Hunter,NA,1958,338,"Evatt, H.",Labor,33062,23464,77.5,0,Elected,NA,NA
+NA,Hunter,NA,1958,338,"Marsden, John",Liberal (1946-),9598,-23464,22.5,0,,NA,NA
+NA,La Trobe,NA,1958,347,"Casey, Richard",Liberal (1946-),33010,12864,30.95,0,Elected,NA,NA
+NA,La Trobe,NA,1958,347,"Goldbloom, Sam",Labor,20146,-12864,18.89,0,,NA,NA
+NA,La Trobe,NA,1958,347,"Jess, John",Lib,28999,-4011,27.19,-6.9,Elected,NA,NA
+NA,La Trobe,NA,1958,347,"Pritchard, Donell",Labor,24508,-8502,22.98,6.9,,NA,NA
+NA,Higinbotham,NA,1958,335,"Lamb, Edwin",Labor,20115,-9805,20.05,0,,NA,NA
+NA,Higinbotham,NA,1958,335,"Timson, Frank",Liberal (1946-),29920,9805,29.83,0,Elected,NA,NA
+NA,Higinbotham,NA,1958,335,"Chipp, Donald",Lib,25443,5328,25.36,-9.2,Elected,NA,NA
+NA,Higinbotham,NA,1958,335,"Fowler, Henry",Labor,24840,4725,24.76,9.2,,NA,NA
+NA,Balaclava,NA,1958,252,"Joske, Percy",Liberal (1946-),29394,18356,72.7,0,Elected,NA,NA
+NA,Balaclava,NA,1958,252,"Rothfield, Norman",Labor,11038,-18356,27.3,0,,NA,NA
+NA,Parramatta,NA,1958,365,"Barwick, Sir",Liberal (1946-),28714,9250,59.6,0,Elected,NA,NA
+NA,Parramatta,NA,1958,365,"Jones, Ray",Labor,19464,-9250,40.4,0,,NA,NA
+NA,Richmond,NA,1957,369,"Anthony, Doug",Country,19238,14460,50.94,0,Elected,NA,NA
+NA,Richmond,NA,1957,369,"Gordon, Raymond",Country,4778,-14460,12.65,0,Elected,NA,NA
+NA,Richmond,NA,1957,369,"Jackson, Oswald",Country,1775,-17463,4.7,0,Elected,NA,NA
+NA,Richmond,NA,1957,369,"O'Neill, Raymond",Country,1312,-17926,3.47,0,Elected,NA,NA
+NA,Richmond,NA,1957,369,"Smith, William",Labor,10664,-8574,28.24,0,Elected,NA,NA
+NA,Wentworth,NA,1956,384,"Bury, Leslie",Lib,17460,1102,51.63,0,Elected,NA,NA
+NA,Wentworth,NA,1956,384,"Robson, Reginald",Independent,16358,-1102,48.37,0,,NA,NA
+NA,Cunningham,NA,1956,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Barker,NA,1956,254,"Dettman, Ralph",Labor,16016,-5919,42.2,9.9,,NA,NA
+NA,Barker,NA,1956,254,"Forbes, Dr",Lib,21935,5919,57.8,-9.9,Elected,NA,NA
+NA,Cook,NA,1955,290,"COPE, James",Labor,21411,18163,86.83,3.4,Elected,NA,NA
+NA,Cook,NA,1955,290,"Smith, John",Independent,3248,-18163,13.17,0,,NA,NA
+NA,Corangamite,NA,1953,292,"MACKINNON, Daniel",Lib,19449,1667,52.24,-6.5,Elected,NA,NA
+NA,Corangamite,NA,1953,292,"McLean, Angus",Labor,17782,-1667,47.76,6.5,,NA,NA
+NA,Dalley,NA,1953,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Lang,NA,1953,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Gwydir,NA,1953,331,"Allan, Ian",Country,18409,1978,52.84,-0.4,Elected,NA,NA
+NA,Gwydir,NA,1953,331,"Quinn, Michael",Labor,16431,-1978,47.16,0.4,,NA,NA
+NA,Werriwa,NA,1952,388,"Griffith, Ian",Lib,15706,-16855,32.54,-12.4,,NA,NA
+NA,Werriwa,NA,1952,388,"Whitlam, Gough",Labor,32561,16855,67.46,12.4,Elected,NA,NA
+NA,Bradfield,NA,1952,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Lyne,NA,1952,350,"Hayes, Edward",Labor,14925,-6559,40.99,9.8,,NA,NA
+NA,Lyne,NA,1952,350,"Lucock, Philip",Country,21484,6559,59.01,-9.8,Elected,NA,NA
+NA,Flinders,NA,1952,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Macquarie,NA,1951,352,"Chifley, Ben",Labor,23136,8811,61.76,0,Elected,NA,NA
+NA,Macquarie,NA,1951,352,"Cotton, Bob",Liberal (1946-),14325,-8811,38.24,0,,NA,NA
+NA,Balaclava,NA,1951,251,"Lewis, Arthur",Labor,14845,-10733,36.72,0,,NA,NA
+NA,Balaclava,NA,1951,251,"White, Thomas",Liberal (1946-),25578,10733,63.28,0,Elected,NA,NA
+NA,Boothby,NA,1941,283,"Lawton, Thomas",Labor,28041,-8583,43.36,15.4,,NA,NA
+NA,Boothby,NA,1941,283,"PRICE, Dr",UAP,36624,8583,56.64,-0.8,Elected,NA,NA
+NA,Corio,NA,1940,294,"Dedman, John",Labor,30095,6830,56.4,0,Elected,NA,NA
+NA,Corio,NA,1940,294,"Patterson, Gerald",United Australia,23265,-6830,43.6,0,,NA,NA
+NA,Kalgoorlie,NA,1940,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Swan,NA,1940,377,"Dinan, Jim",Labor,19879,-6976,21.74,0,,NA,NA
+NA,Swan,NA,1940,377,"Gregory, Henry",Country,26855,6976,29.37,0,Elected,NA,NA
+NA,Swan,NA,1940,377,"Dinan, James",Labor,21154,1275,23.14,5.2,,NA,NA
+NA,Swan,NA,1940,377,"Marwick, Thomas",Country,23537,3658,25.74,-5.2,Elected,NA,NA
+NA,Wilmot,NA,1939,395,"Guy, Hon",UAP,11188,-69,49.85,-5.3,Elected,NA,NA
+NA,Wilmot,NA,1939,395,"Spurr, Lancelot",Labor,11257,69,50.15,5.3,,NA,NA
+NA,Griffith,NA,1939,328,"Conelan, William",Labor,27790,8,50.01,-0.3,Elected,NA,NA
+NA,Griffith,NA,1939,328,"McCowan, Peter",UAP,27782,-8,49.99,0.3,,NA,NA
+NA,Wakefield,NA,1938,380,"Butler, Richard",UAP,21549,-6706,43.27,-20.1,Elected,NA,NA
+NA,Wakefield,NA,1938,380,"McHugh, Sydney",Labor,28255,6706,56.73,20.1,,NA,NA
+NA,Gwydir,NA,1937,330,"Batchelor, Ernest",Country,24679,-2461,47.63,0,,NA,NA
+NA,Gwydir,NA,1937,330,"Scully, William",Labor,27140,2461,52.37,0,Elected,NA,NA
+NA,Darling Downs,NA,1936,307,"Buchanan, John",Labor,19639,-6741,42.68,3.5,,NA,NA
+NA,Darling Downs,NA,1936,307,"Fadden, Arthur",Country,26380,6741,57.32,-3.5,,NA,NA
+NA,Kennedy,NA,1936,342,"Boyd, James",Independent,17170,-6018,42.54,0,,NA,NA
+NA,Kennedy,NA,1936,342,"Riordan, William",Labor,23188,6018,57.46,0,Elected,NA,NA
+NA,Fawkner,NA,1935,316,"Cameron, Donald",Labor,16433,-8161,40.05,12.4,,NA,NA
+NA,Fawkner,NA,1935,316,"Holt, Harold",UAP,24594,8161,59.95,-6.6,Elected,NA,NA
+NA,Newcastle,NA,1935,360,"Smith, James",ALPN,23944,-3923,46.21,0,,NA,NA
+NA,Newcastle,NA,1935,360,"Watkins, David",Labor,27867,3923,53.79,0,Elected,NA,NA
+NA,Flinders,NA,1933,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,East Sydney,NA,1932,314,"McCall, William",UAP,18503,-173,49.77,-1.9,Elected,NA,NA
+NA,East Sydney,NA,1932,314,"Ward, Eddie",ALPN,18676,173,50.23,0,,NA,NA
+NA,East Sydney,NA,1931,313,"Clasby, John",United Australia,19831,1282,51.67,0,Elected,NA,NA
+NA,East Sydney,NA,1931,313,"Ward, Eddie",Lang Labor (1931-34),18549,-1282,48.33,0,,NA,NA
+NA,Parkes,NA,1931,363,"Garden, Herbert",Lang Labor (1931-34),21435,-14751,37.2,0,,NA,NA
+NA,Parkes,NA,1931,363,"Marr, Charles",United Australia,36186,14751,62.8,0,Elected,NA,NA
+NA,Balaclava,NA,1929,250,"Cameron, Don",Labor,22480,-9271,22.72,0,,NA,NA
+NA,Balaclava,NA,1929,250,"White, Thomas",Nationalist,31751,9271,32.09,0,Elected,NA,NA
+NA,Balaclava,NA,1929,250,"Francis, Frederick",Independent,16048,-6432,16.22,0,,NA,NA
+NA,Balaclava,NA,1929,250,"White, Thomas",Nationalist,28655,6175,28.96,-0.9,Elected,NA,NA
+NA,Franklin,NA,1929,321,"Seabrook, Alfred",Nationalist,10175,-2224,23.04,0,,NA,NA
+NA,Franklin,NA,1929,321,"McWilliams, William",Independent,12399,2224,28.08,0,Elected,NA,NA
+NA,Franklin,NA,1929,321,"Blacklow, Archibald",Nationalist,10385,210,23.52,0,,NA,NA
+NA,Franklin,NA,1929,321,"Frost, Charles",Labor,11204,1029,25.37,0,Elected,NA,NA
+NA,Martin,NA,1928,354,"Hannett, Percy",Labor,23631,-7535,22.9,0,,NA,NA
+NA,Martin,NA,1928,354,"Pratten, Graham",Nationalist,31166,7535,30.2,0,Elected,NA,NA
+NA,Martin,NA,1928,354,"Hannett, Percy",Labor,18922,-4709,18.34,3.9,,NA,NA
+NA,Martin,NA,1928,354,"Pratten, Graham",Nationalist,29482,5851,28.57,-3.9,,NA,NA
+NA,Dalley,NA,1927,302,"Gee, Walter",Nationalist,12667,-8519,37.42,1.5,,NA,NA
+NA,Dalley,NA,1927,302,"THEODORE, Hon",Labor,21186,8519,62.58,-1.5,Elected,NA,NA
+NA,Warringah,NA,1927,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Eden-Monaro,NA,1926,311,"Morgan, Charles",Labor,13729,-6844,40.02,4.6,,NA,NA
+NA,Eden-Monaro,NA,1926,311,"Perkins, John",Nationalist,20573,6844,59.98,-4.6,Elected,NA,NA
+NA,Yarra,NA,1922,397,"Fitzgerald, Thomas",Nationalist,5042,-12855,21.98,0,,NA,NA
+NA,Yarra,NA,1922,397,"Scullin, James",Labor,17897,12855,78.02,0,Elected,NA,NA
+NA,West Sydney,NA,1921,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Maranoa,NA,1921,353,"Dunstan, William",Labor,10329,-1422,46.78,-5.9,Elected,NA,NA
+NA,Maranoa,NA,1921,353,"Hunter, James",Country,11751,1422,53.22,5.9,,NA,NA
+NA,Parramatta,NA,1921,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Kalgoorlie,NA,1920,340,"Foley, George",Nationalist,8382,443,51.36,3.5,,NA,NA
+NA,Kalgoorlie,NA,1920,340,"Mahon, Hon",Labor,7939,-443,48.64,-3.5,Elected,NA,NA
+NA,Ballaarat,NA,1920,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Echuca,NA,1919,310,"Hill, William",Victorian Farmers' Union,16878,7393,64.02,0,Elected,NA,NA
+NA,Echuca,NA,1919,310,"Stewart, James",Nationalist,9485,-7393,35.98,0,,NA,NA
+NA,Swan,NA,1918,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Corangamite,NA,1918,291,"Gibson, William",Victorian Farmers' Union,14096,3152,56.29,-4.1,,NA,NA
+NA,Corangamite,NA,1918,291,"Scullin, James",Labor,10944,-3152,43.71,4.1,,NA,NA
+NA,Flinders,NA,1918,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Grampians,NA,1917,325,"Jowett, Edmund",Nationalist,11232,1967,54.8,-2.2,Elected,NA,NA
+NA,Grampians,NA,1917,325,"Russell, David",Labor,9265,-1967,45.2,2.2,,NA,NA
+NA,Darwin,NA,1917,304,"Hurst, James",Labor,5285,-1380,44.23,3,,NA,NA
+NA,Darwin,NA,1917,304,"SPENCE, Hon",Nationalist,6665,1380,55.77,-3,Elected,NA,NA
+NA,Dalley,NA,1915,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Wide Bay,NA,1915,392,"Corser, Edward",Lib,14027,86,50.15,0,Elected,NA,NA
+NA,Wide Bay,NA,1915,392,"Thompson, Andrew",Labor,13941,-86,49.85,-14.5,,NA,NA
+NA,Grampians,NA,1915,324,"McDougall, John",Labor,11522,-594,48.74,-1.6,,NA,NA
+NA,Grampians,NA,1915,324,"SALMON, Hon",Lib,12116,594,51.26,1.6,Elected,NA,NA
+NA,Bendigo,NA,1915,258,"Hampson, Alfred",Labor,12188,427,50.89,-4.2,Elected,NA,NA
+NA,Bendigo,NA,1915,258,"Richards, William",Lib,11761,-427,49.11,4.2,,NA,NA
+NA,Werriwa,NA,1912,387,"BENNETT, Benjamin",Labor,10884,338,50.79,-3.8,Elected,NA,NA
+NA,Werriwa,NA,1912,387,"Conroy, Hon",Lib,10546,-338,49.21,3.8,,NA,NA
+NA,North Sydney,NA,1911,361,"O'Brien, Stephen",Labor,4437,-7250,27.52,-6.1,,NA,NA
+NA,North Sydney,NA,1911,361,"Ryrie, Granville",Lib,11687,7250,72.48,7.3,Elected,NA,NA
+NA,Boothby,NA,1911,282,"Gordon, David",Lib,10656,2648,57.09,0,,NA,NA
+NA,Boothby,NA,1911,282,"Jelley, James",Labor,8008,-2648,42.91,-20.9,Elected,NA,NA
+NA,Batman,NA,1911,256,"Brennan, Frank",Labor,9385,2453,57.52,-6.1,Elected,NA,NA
+NA,Batman,NA,1911,256,"O'Neill, Frederick",Lib,6932,-2453,42.48,6.1,,NA,NA
+NA,Kooyong,NA,1910,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Wakefield,NA,1909,379,"Foster, Richard",Lib,8120,1331,54.46,0,Elected,NA,NA
+NA,Wakefield,NA,1909,379,"Vaughan, John",Labor,6789,-1331,45.54,9.3,,NA,NA
+NA,Adelaide,NA,1908,246,"McLachlan, Alexander",Independent,4887,-234,48.83,0,,NA,NA
+NA,Adelaide,NA,1908,246,"Roberts, Ernest",Labor,5121,234,51.17,0,Elected,NA,NA
+NA,Echuca,NA,1907,309,"Kennedy, Thomas",Protectionist,10481,-1137,47.43,-2.5,,NA,NA
+NA,Echuca,NA,1907,309,"Palmer, Albert",Anti-Socialist,11618,1137,52.57,2.5,Elected,NA,NA
+NA,Wilmot,NA,1904,394,"Cameron, Donald",Free Trade,2368,185,52.03,-2.9,Elected,NA,NA
+NA,Wilmot,NA,1904,394,"Cheek, John",Protectionist,2183,-185,47.97,2.9,,NA,NA
+NA,Riverina,NA,1904,371,"Blackwood, Robert",Free Trade,5184,-363,48.31,-1.7,Elected,NA,NA
+NA,Riverina,NA,1904,371,"CHANTER, Hon",Protectionist,5547,363,51.69,1.7,,NA,NA
+NA,Melbourne,NA,1904,356,"McEacharn, Sir",Protectionist,7808,-859,47.39,-2.8,,NA,NA
+NA,Melbourne,NA,1904,356,"MALONEY, Dr",Lab,8667,859,52.61,2.8,Elected,NA,NA
+NA,East Sydney,NA,1903,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Tasmania,NA,1902,NA,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+NA,Darling Downs,NA,1901,306,"Bell, Joshua",Independent,2687,-1845,37.22,0,,NA,NA
+NA,Darling Downs,NA,1901,306,"Groom, Littleton",Independent,4532,1845,62.78,-15.7,Elected,NA,NA
