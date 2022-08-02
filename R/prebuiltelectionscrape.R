@@ -59,7 +59,8 @@
 #
 # main_elections_2cp<-dplyr::bind_rows(list_2cp)
 #
-#
+# main_elections_2cp$source<-NA
+# main_elections_2cp$Note<-NA
 #
 # readr::write_csv(main_elections_2cp,file="inst/extdata/main_elections_2cp.csv")
 #
