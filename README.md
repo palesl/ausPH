@@ -26,7 +26,7 @@ devtools::install_github("palesl/ausPH")
 These examples show some simple functionality of the package:
 
 ``` r
-library(ausPH)
+library(ausPH) 
 ## get elections
 
 getElections(chamber = "all", byelections = T)

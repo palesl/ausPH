@@ -46,6 +46,6 @@ getParliaments()
 
 ## get two candidate preferred since 1919
 
-get2CP() 
+get2CP()
 ```
 
