@@ -35,7 +35,7 @@ devtools::install_github("palesl/ausPH")
 These examples show some simple functionality of the package:
 
 ```{r example}
-library(ausPH)
+library(ausPH) 
 ## get elections
 
 getElections(chamber = "all", byelections = T)
@@ -46,6 +46,6 @@ getParliaments()
 
 ## get two candidate preferred since 1919
 
-get2CP()
+get2CP() 
 ```
 

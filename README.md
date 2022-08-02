@@ -66,35 +66,8 @@ getParliaments()
 ## get two candidate preferred since 1919
 
 get2CP()
-#> Rows: 8978 Columns: 14
-#> ── Column specification ────────────────────────────────────────────────────────
-#> Delimiter: ","
-#> chr (5): Name, State, Candidate, Party, Status
-#> dbl (7): Id, Year, ElectionID, votes_2cp, margin_2cp, margin_percentage_2cp,...
-#> lgl (2): source, Note
-#> 
-#> ℹ Use `spec()` to retrieve the full column specification for this data.
-#> ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
-#> Rows: 8978 Columns: 14
-#> ── Column specification ────────────────────────────────────────────────────────
-#> Delimiter: ","
-#> chr (5): Name, State, Candidate, Party, Status
-#> dbl (7): Id, Year, ElectionID, votes_2cp, margin_2cp, margin_percentage_2cp,...
-#> lgl (2): source, Note
-#> 
-#> ℹ Use `spec()` to retrieve the full column specification for this data.
-#> ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
-#> Rows: 8978 Columns: 14
-#> ── Column specification ────────────────────────────────────────────────────────
-#> Delimiter: ","
-#> chr (5): Name, State, Candidate, Party, Status
-#> dbl (7): Id, Year, ElectionID, votes_2cp, margin_2cp, margin_percentage_2cp,...
-#> lgl (2): source, Note
-#> 
-#> ℹ Use `spec()` to retrieve the full column specification for this data.
-#> ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 #> [1] "Notes contain information on results missing from the parliamentary handbook"
-#> # A tibble: 26,934 × 14
+#> # A tibble: 9,312 × 14
 #>       Id Name     State  Year ElectionID Candidate    Party votes_2cp margin_2cp
 #>    <dbl> <chr>    <chr> <dbl>      <dbl> <chr>        <chr>     <dbl>      <dbl>
 #>  1 24373 Adelaide SA     2019        403 GEORGANAS, … Labor     62362      17543
@@ -107,6 +80,6 @@ get2CP()
 #>  8 24297 Banks    NSW    2019        403 GAMBIAN, Ch… Labor     40121     -11488
 #>  9 24372 Barker   SA     2019        403 PASIN, Tony  Libe…     72851      40036
 #> 10 24372 Barker   SA     2019        403 O'BRIEN, Mat Labor     32815     -40036
-#> # … with 26,924 more rows, and 5 more variables: margin_percentage_2cp <dbl>,
-#> #   swing_2cp <dbl>, Status <chr>, source <lgl>, Note <lgl>
+#> # … with 9,302 more rows, and 5 more variables: margin_percentage_2cp <dbl>,
+#> #   swing_2cp <dbl>, Status <chr>, source <chr>, Note <chr>
 ```
