@@ -61,7 +61,7 @@
 #
 #
 #
-# readr::write_csv(main_elections_2cp,file="inst/extdata/two_candidate_preferred/main_elections_2cp.csv")
+# readr::write_csv(main_elections_2cp,file="inst/extdata/main_elections_2cp.csv")
 #
 # # fed byelections
 #
@@ -99,18 +99,17 @@
 # dplyr::bind_rows(list_by)
 #
 #
-# byelections_merge<- byelections |>dplyr::select(Division, Year) |>
+# byelections_merge<- byelections |>dplyr::select(Id, Division, Year) |>
 #   dplyr::rename("Name"=Division)|>
 #   dplyr::left_join(dplyr::bind_rows(list_by)) |>
 #   dplyr::mutate(Note=dplyr::case_when(is.na(Party)~"Missing 2cp from by-election"))
 #
 #
-# byelections_merge$Id<-NA
 #
 # byelections_merge<- byelections_merge|>
 #   dplyr::select("Id","Name", "State","Year","ElectionID",
 #                 "Candidate","Party",  "votes_2cp", "margin_2cp",
 #                 "margin_percentage_2cp", "swing_2cp" ,"Status", "source", "Note" )
 #
-# readr::write_csv(byelections_merge,file="inst/extdata/two_candidate_preferred/by_elections_2cp.csv")
+# readr::write_csv(byelections_merge,file="inst/extdata/by_elections_2cp.csv")
 #

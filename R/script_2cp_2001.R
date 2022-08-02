@@ -50,5 +50,5 @@
 #
 # out<- dplyr::bind_rows(list2001_2cp)
 #
-# readr::write_csv(out,file="inst/extdata/two_candidate_preferred/results_2001_2cp.csv")
+# readr::write_csv(out,file="inst/extdata/results_2001_2cp.csv")
 #
