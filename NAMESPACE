@@ -3,4 +3,5 @@
 export(get2CP)
 export(getElections)
 export(getElectorates)
+export(getIndividuals)
 export(getParliaments)
