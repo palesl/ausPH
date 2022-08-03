@@ -12,7 +12,8 @@
 
 getElections<-function(chamber=c("all","house","senate"), byelections=FALSE){
   url<- "https://handbookapi.aph.gov.au/api/Elections/Elections"
-  dat<-rjson::fromJSON(file=url)|>dplyr::bind_rows()
+  dat<-rjson::fromJSON(file=url)|>dplyr::bind_rows()|>
+    dplyr::select(-`$id`)
 
   Division <- Reps <- Senate <- NULL
 
