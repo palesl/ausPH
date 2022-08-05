@@ -11,11 +11,12 @@
 #' getElections(chamber="all")
 
 getElections<-function(chamber=c("all","house","senate"), byelections=FALSE){
-  url<- "https://handbookapi.aph.gov.au/api/Elections/Elections"
-  dat<-rjson::fromJSON(file=url)|>dplyr::bind_rows()|>
-    dplyr::select(-`$id`)
 
-  Division <- Reps <- Senate <- NULL
+  print("All federal elections excluding elections for casual vacancies in the Senate")
+  Division <- Reps <- Senate <- Byelection <- NULL
+  datesfile<-system.file("extdata", "ElectionDates.xlsx", package = "ausPH")
+  dat<- readxl::read_excel(datesfile)
+  dat$DateElection<-as.Date(dat$DateElection)
 
   if(missing(chamber)){
     stop("chamber must be specified")
@@ -26,7 +27,7 @@ getElections<-function(chamber=c("all","house","senate"), byelections=FALSE){
   }
 
   if(chamber=="all" && byelections==F){
-    return(dat |> dplyr::filter(is.na(Division))|>
+    return(dat |> dplyr::filter(Byelection==F)|>
              dplyr::select(-Division))
   }
 
@@ -35,7 +36,7 @@ getElections<-function(chamber=c("all","house","senate"), byelections=FALSE){
   }
 
   if(chamber=='house' && byelections==F){
-    return(dat |> dplyr::filter(Reps==T, is.na(Division))|>
+    return(dat |> dplyr::filter(Reps==T, Byelection==F)|>
              dplyr::select(-Division))
   }
 
