@@ -25,7 +25,7 @@
 #   )
 #   return(out)
 # }
-#
+
 # list_2cp<-list()
 # count<-1
 # for(i in 1:38){
@@ -64,17 +64,20 @@
 #
 # readr::write_csv(main_elections_2cp,file="inst/extdata/main_elections_2cp.csv")
 #
-# # fed byelections
+# fed byelections
 #
 # list_by<-list()
 #
 # url<- "https://handbookapi.aph.gov.au/api/Elections/Elections"
 #
-# byelections <-rjson::fromJSON(file=url)|>dplyr::bind_rows()|>
-#   dplyr::filter(!is.na(Division))|>dplyr::select(-`$id`)
+# datesfile<-system.file("extdata", "ElectionDates.xlsx", package = "ausPH")
+# dat<- readxl::read_excel(datesfile)
+# dat$DateElection<-as.Date(dat$DateElection)
+#
+# byelections<- dat|> dplyr::filter(Byelection==T)
 #
 # for(i in 1:nrow(byelections)){
-#   url<- paste0("https://handbookapi.aph.gov.au/api/Elections/TwoCandidatePreferred?divisionName=",byelections$Division[i], "&year=",byelections$Year[i],"&electionId=undefined")
+#   url<- paste0("https://handbookapi.aph.gov.au/api/Elections/TwoCandidatePreferred?divisionName=undefined&year=undefined&electionId=",byelections$Id[i])
 #   url<- gsub(" ", "%20", url)
 #   dat<-try_url(url)
 #
@@ -97,7 +100,7 @@
 #                      ". Election: ",byelections$Year[i])))
 # }
 #
-# dplyr::bind_rows(list_by)
+# trs<-dplyr::bind_rows(list_by)
 #
 #
 # byelections_merge<- byelections |>dplyr::select(Id, Division, Year) |>
@@ -112,5 +115,5 @@
 #                 "Candidate","Party",  "votes_2cp", "margin_2cp",
 #                 "margin_percentage_2cp", "swing_2cp" ,"Status", "source", "Note" )
 #
-# readr::write_csv(byelections_merge,file="inst/extdata/by_elections_2cp.csv")
+# readr::write_csv(byelections_merge,file="inst/extdata/by_elections_2cp_scrape.csv")
 #
