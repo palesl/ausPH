@@ -264,3 +264,5 @@ Id,Name,State,Year,ElectionID,Candidate,Party,votes_2cp,margin_2cp,margin_percen
 394,Wilmot,NA,1904,394,"Cheek, John",Protectionist,2183,-185,47.97,2.9,,NA,NA
 395,Wilmot,NA,1939,395,"Guy, Hon",UAP,11188,-69,49.85,-5.3,Elected,NA,NA
 395,Wilmot,NA,1939,395,"Spurr, Lancelot",Labor,11257,69,50.15,5.3,,NA,NA
+9008,Dickson,Qld,1993,9008,"Flegg, Bruce",Liberal (1946-),33686,-347,49.74,0,,NA,"originally wrong date in Parl house. Election was supplementary, not part of 1993 federal. Fixed"
+9008,Dickson,Qld,1993,9008,"Lavarch, Michael",Labor,34033,347,50.26,0,Elected,NA,"originally wrong date in Parl house. Election was supplementary, not part of 1993 federal. Fixed"
