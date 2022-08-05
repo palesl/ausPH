@@ -29,8 +29,8 @@ Id,Name,State,Year,ElectionID,Candidate,Party,votes_2cp,margin_2cp,margin_percen
 81540,Cunningham,NSW,2001,201,"MARTIN, Stephen",ALP,44904,NA,60.65,-7.12,NA,https://results.aec.gov.au/10822/Website/index.html,missing from parliament handbook beta
 82002,Dobell,NSW,2001,201,"LEE, Michael",ALP,37005,NA,49.62,-1.91,NA,https://results.aec.gov.au/10822/Website/index.html,missing from parliament handbook beta
 82002,Dobell,NSW,2001,201,"TICEHURST, Ken",LP,37565,NA,50.38,1.91,NA,https://results.aec.gov.au/10822/Website/index.html,missing from parliament handbook beta
-85815,Eden,NSW,2001,201,"WHAN, Steve",ALP,37918,NA,48.31,-1.08,NA,https://results.aec.gov.au/10822/Website/index.html,missing from parliament handbook beta
-85815,Eden,NSW,2001,201,"NAIRN, Gary",LP,40579,NA,51.69,1.08,NA,https://results.aec.gov.au/10822/Website/index.html,missing from parliament handbook beta
+85815,Eden-Monaro,NSW,2001,201,"WHAN, Steve",ALP,37918,NA,48.31,-1.08,NA,https://results.aec.gov.au/10822/Website/index.html,missing from parliament handbook beta
+85815,Eden-Monaro,NSW,2001,201,"NAIRN, Gary",LP,40579,NA,51.69,1.08,NA,https://results.aec.gov.au/10822/Website/index.html,missing from parliament handbook beta
 84423,Farrer,NSW,2001,201,"BOTT, Bill",NP,37663,NA,49.86,NA,NA,https://results.aec.gov.au/10822/Website/index.html,missing from parliament handbook beta
 84423,Farrer,NSW,2001,201,"LEY, Sussan",LP,37869,NA,50.14,NA,NA,https://results.aec.gov.au/10822/Website/index.html,missing from parliament handbook beta
 82745,Fowler,NSW,2001,201,"WATSON, Glenn",LP,19215,NA,28.51,4.51,NA,https://results.aec.gov.au/10822/Website/index.html,missing from parliament handbook beta
