@@ -2,7 +2,7 @@
 % Please edit documentation in R/getElections.R
 \name{getElections}
 \alias{getElections}
-\title{Get a list of elections in the Australian Parliament}
+\title{Data on elections since 1901}
 \usage{
 getElections(chamber = c("all", "house", "senate"), byelections = FALSE)
 }
@@ -16,7 +16,7 @@ then a list of elections with by-elections and their divisions is returned.}
 a tibble
 }
 \description{
-Get a list of elections in the Australian Parliament
+Data on elections since 1901
 }
 \examples{
 getElections(chamber="all")

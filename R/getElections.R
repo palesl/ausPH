@@ -1,4 +1,4 @@
-#' Get a list of elections in the Australian Parliament
+#' Data on elections since 1901
 #'
 #' @param chamber Select from c("all","house","senate")
 #' @param byelections Choose to include house by-elections. If .byelections = TRUE,

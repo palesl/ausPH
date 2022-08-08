@@ -2,7 +2,7 @@
 % Please edit documentation in R/getElectorates.R
 \name{getElectorates}
 \alias{getElectorates}
-\title{Get a list of electorates}
+\title{Data on electorates since 1901}
 \usage{
 getElectorates()
 }
@@ -10,7 +10,7 @@ getElectorates()
 a tibble
 }
 \description{
-Get a list of electorates
+Data on electorates since 1901
 }
 \examples{
 getElectorates()

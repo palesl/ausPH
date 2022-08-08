@@ -1,4 +1,4 @@
-#' Get list of Parliaments, their start date, dissolution date, end date and election date
+#' Data on Parliamentary terms since 1901
 #'
 #' @return a tibble
 #' @export

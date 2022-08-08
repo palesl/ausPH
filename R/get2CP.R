@@ -1,4 +1,4 @@
-#' Get two candidate preferred results since 1919
+#' Data on two candidate preferred results since 1919
 #'
 #' @param include_byelections Choose to include house by-elections. If .byelections = TRUE,
 #' then a list of elections with by-elections and their divisions is returned.

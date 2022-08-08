@@ -13,13 +13,22 @@ knitr::opts_chunk$set(
 )
 ```
 
-# ausPH <img src='man/figures/ausPH_hex.png' align="right" height="139" />
+# ausPH <img src="man/figures/ausPH_hex.png" align="right" height="139"/>
 
 <!-- badges: start -->
 
 <!-- badges: end -->
 
-The goal of ausPH is to retrieve data from the [Parliamentary Handbook of the Commonwealth of Australia](https://handbook.aph.gov.au/). The first example is a call to produce a list of elections in the Australian Parliament since Federation. 
+The goal of ausPH is to retrieve data from the [Parliamentary Handbook of the Commonwealth of Australia](https://handbook.aph.gov.au/). The first example is a call to produce a list of elections in the Australian Parliament since Federation.
+
+At present, the package contains the following functions:
+
+-   `get2CP` (Data on two candidate preferred results since 1919)
+-   `getCommitteeMembers` (Data on committee memberships since 1902)
+-   `getElections` (Data on elections since 1901)
+-   `getElectorates` (Data on electorates since 1901)
+-   `getIndividuals` (Data on individuals and biographical information since 1901)
+-   `getParliaments` (Data on Parliamentary terms since 1901)
 
 ## Installation
 
@@ -48,4 +57,3 @@ getParliaments()
 
 get2CP()
 ```
-

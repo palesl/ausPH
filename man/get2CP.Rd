@@ -2,7 +2,7 @@
 % Please edit documentation in R/get2CP.R
 \name{get2CP}
 \alias{get2CP}
-\title{Get two candidate preferred results since 1919}
+\title{Data on two candidate preferred results since 1919}
 \usage{
 get2CP(include_byelections = F)
 }
@@ -14,7 +14,7 @@ then a list of elections with by-elections and their divisions is returned.}
 a tibble
 }
 \description{
-Get two candidate preferred results since 1919
+Data on two candidate preferred results since 1919
 }
 \examples{
 get2CP()

@@ -1,4 +1,4 @@
-#' Get a list of electorates
+#' Data on electorates since 1901
 #'
 #' @return a tibble
 #' @export

@@ -2,7 +2,7 @@
 % Please edit documentation in R/getParliaments.R
 \name{getParliaments}
 \alias{getParliaments}
-\title{Get list of Parliaments, their start date, dissolution date, end date and election date}
+\title{Data on Parliamentary terms since 1901}
 \usage{
 getParliaments()
 }
@@ -10,7 +10,7 @@ getParliaments()
 a tibble
 }
 \description{
-Get list of Parliaments, their start date, dissolution date, end date and election date
+Data on Parliamentary terms since 1901
 }
 \examples{
 getParliaments()

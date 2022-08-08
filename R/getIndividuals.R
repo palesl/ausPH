@@ -1,4 +1,4 @@
-#' Get a list of individuals
+#' Data on individuals and biographical information since 1901
 #' @return a list
 #' @export
 #'

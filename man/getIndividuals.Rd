@@ -2,7 +2,7 @@
 % Please edit documentation in R/getIndividuals.R
 \name{getIndividuals}
 \alias{getIndividuals}
-\title{Get a list of individuals}
+\title{Data on individuals and biographical information since 1901}
 \usage{
 getIndividuals()
 }
@@ -10,7 +10,7 @@ getIndividuals()
 a list
 }
 \description{
-Get a list of individuals
+Data on individuals and biographical information since 1901
 }
 \examples{
 getIndividuals()
