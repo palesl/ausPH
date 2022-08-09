@@ -8,9 +8,9 @@
 
 The goal of ausPH is to retrieve data from the [Parliamentary Handbook
 of the Commonwealth of Australia](https://handbook.aph.gov.au/) and
-return ready-to-analyse data, formatted as a `tibble`. The data relies
-on the data from the Handbook site, which is still in beta and subject
-to change and improvement.
+return ready-to-analyse data, formatted as a `tibble`. The package
+relies on the data from the Handbook site, which is still in beta and
+subject to change and improvement.
 
 At present, the package contains the following functions:
 
