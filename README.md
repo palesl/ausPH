@@ -7,15 +7,16 @@
 <!-- badges: end -->
 
 The goal of ausPH is to retrieve data from the [Parliamentary Handbook
-of the Commonwealth of Australia](https://handbook.aph.gov.au/). The
-first example is a call to produce a list of elections in the Australian
-Parliament since Federation.
+of the Commonwealth of Australia](https://handbook.aph.gov.au/) and
+return ready-to-analyse data, formatted in tidyverse `tibble` format.
+The data relies on the data from the Handbook site, which is still in
+beta and subject to change and improvement.
 
 At present, the package contains the following functions:
 
--   `get2CP` (Data on two candidate preferred results since 1919)
+-   `get2CP` (Data on two candidate preferred results since 1919)[^1]
 -   `getCommitteeMembers` (Data on committee memberships since 1902)
--   `getElections` (Data on elections since 1901)
+-   `getElections` (Data on elections since 1901)[^2]
 -   `getElectorates` (Data on electorates since 1901)
 -   `getIndividuals` (Data on individuals and biographical information
     since 1901)
@@ -31,7 +32,7 @@ You can install the development version of ausPH from
 devtools::install_github("palesl/ausPH")
 ```
 
-## Example
+## Examples
 
 These examples show some simple functionality of the package:
 
@@ -100,3 +101,12 @@ get2CP()
 #> #   ³​votes_2cp, ⁴​margin_2cp, ⁵​margin_percentage_2cp, ⁶​swing_2cp
 #> # ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names
 ```
+
+[^1]: The get2CP function does not retrieve live data from the API,
+    since retrieval in real time is currently infeasible. In addition,
+    some missing elections were identified in the current PH data.
+    Therefore the function returns PH data *with* supplementary data
+    points, documented in the Note variable.
+
+[^2]: missing elections were filled in, with accompanying new unique
+    identifiers.
