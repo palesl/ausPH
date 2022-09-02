@@ -99,6 +99,11 @@ get2CP()
 #> #   ³​votes_2cp, ⁴​margin_2cp, ⁵​margin_percentage_2cp, ⁶​swing_2cp
 ```
 
+## Image Attribution
+
+Hex image icon: Canberra Parliament House by Anna Hatzisavas from [Noun
+Project](https://thenounproject.com/browse/icons/term/canberra-parliament-house/ "Canberra Parliament House Icons")
+
 [^1]: The get2CP function does not retrieve live data from the API,
     since retrieval in real time is currently infeasible. In addition,
     some missing elections were identified in the current PH data.
