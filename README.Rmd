@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# ausPH <img src="man/figures/ausPH_hex.png" align="right" height="139"/>
+# ausPH <img src="man/figures/ausPH_hex_new.png" align="right" height="139"/>
 
 <!-- badges: start -->
 
