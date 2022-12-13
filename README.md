@@ -14,13 +14,17 @@ subject to change and improvement.
 
 At present, the package contains the following functions:
 
--   `get2CP` (Data on two candidate preferred results since 1919)[^1]
--   `getCommitteeMembers` (Data on committee memberships since 1902)
--   `getElections` (Data on elections since 1901)[^2]
--   `getElectorates` (Data on electorates since 1901)
--   `getIndividuals` (Data on individuals and biographical information
-    since 1901)
--   `getParliaments` (Data on Parliamentary terms since 1901)
+- `get2CP` (Data on two candidate preferred results since 1919)[^1]
+- `getCommitteeMembers` (Data on committee memberships since 1902)
+- `getElections` (Data on elections since 1901)[^2]
+- `getElectorates` (Data on electorates since 1901)
+- `getIndividuals` (Data on individuals and biographical information
+  since 1901)
+- `getParlService` (data on parliamentary tenures of MPs and senators
+  since 1901)
+- `getParliaments` (Data on Parliamentary terms since 1901)
+- `getMinisters` (Data on Ministers since 1901)
+- `getShadowMinisters` (Data on Shadow Ministers since 1901)
 
 ## Installation
 
@@ -72,7 +76,7 @@ getParliaments()
 #>  6     6 Sixth Parli… 1914-09-05 1914-10-08 1917-03-26 1917-05-04 Sixth … Sixth…
 #>  7     7 Seventh Par… 1917-05-05 1917-06-14 1919-11-03 1919-12-12 Sevent… Seven…
 #>  8     8 Eighth Parl… 1919-12-13 1920-02-26 1922-11-06 1922-12-15 Eighth… Eight…
-#>  9     9 Ninth Parli… 1922-12-16 1922-02-28 1925-10-03 1925-11-13 Ninth … Ninth…
+#>  9     9 Ninth Parli… 1922-12-16 1923-02-28 1925-10-03 1925-11-13 Ninth … Ninth…
 #> 10    10 Tenth Parli… 1925-11-14 1926-01-13 1928-10-09 1928-11-16 Tenth … Tenth…
 #> # … with 37 more rows, and abbreviated variable names ¹​DateElection,
 #> #   ²​DateOpening, ³​DateDissolution, ⁴​ParliamentEnd, ⁵​ParliamentOrdinal

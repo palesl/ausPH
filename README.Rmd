@@ -28,7 +28,11 @@ At present, the package contains the following functions:
 -   `getElections` (Data on elections since 1901)[^2]
 -   `getElectorates` (Data on electorates since 1901)
 -   `getIndividuals` (Data on individuals and biographical information since 1901)
+-   `getParlService` (data on parliamentary tenures of MPs and senators since 1901)
 -   `getParliaments` (Data on Parliamentary terms since 1901)
+-   `getMinisters` (Data on Ministers since 1901)
+-   `getShadowMinisters` (Data on Shadow Ministers since 1901)
+
 
 [^1]: The get2CP function does not retrieve live data from the API, since retrieval in real time is currently infeasible. In addition, some missing elections were identified in the current PH data. Therefore the function returns PH data *with* supplementary data points, documented in the Note variable.
 
