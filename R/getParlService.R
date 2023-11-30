@@ -40,7 +40,7 @@ getParlService<- function(chamber=c('all', 'house', 'senate')){
     return(data_house)
   }
 
-  if(chamber==senate){
+  if(chamber=='senate'){
     data_senate<-data|>dplyr::filter(MemberOrSenator=="Senator")|>
       dplyr::select(-MemberOrSenator)
     return(data_senate)  }
