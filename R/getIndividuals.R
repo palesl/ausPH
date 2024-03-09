@@ -4,7 +4,7 @@
 #'
 #' @examples getIndividuals()
 getIndividuals<-function(){
-  url<- "https://handbookapi.aph.gov.au/api/individuals?$orderby=FamilyName,GivenName&$skip=0&$count=false&$select=PHID,DisplayName,Gender,State,StateAbbrev,SenateState,Electorate,Party"
+  url<- "https://handbookapi.aph.gov.au/api/individuals?$orderby=FamilyName,GivenName&$skip=0&$count=false&$select=PHID,DisplayName,Gender,DateOfBirth,State,StateAbbrev,SenateState,Electorate,Party"
   dat<-rjson::fromJSON(file=url)[["value"]]|>dplyr::bind_rows()
   return(dat)
 }
