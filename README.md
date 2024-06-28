@@ -40,6 +40,24 @@ You can install the development version of ausPH from
 devtools::install_github("palesl/ausPH")
 ```
 
+## Citation
+
+Please cite this package as the following:
+
+> Leslie, Pat. 2024. “AusPH: An R Package to Retrieve Data from the
+> Parliamentary Handbook of the Commonwealth of Australia.”
+> <https://github.com/palesl/ausPH>.
+
+Bibtex format entry:
+
+    @misc{leslie_ausph_2024,
+        title = {{ausPH}: {An} {R} package to retrieve data from the {Parliamentary} {Handbook} of the {Commonwealth} of {Australia}.},
+        url = {https://github.com/palesl/ausPH},
+        author = {Leslie, Pat},
+        year = {2024},
+        note = {original-date: 2022-07-29T00:58:54Z},
+    }
+
 ## Examples
 
 These examples show some simple functionality of the package:
@@ -65,6 +83,9 @@ getElections(chamber = "all", byelections = T)
 #> 10 Echuca    1907-07-10    1907 FALSE              P3           309 TRUE  FALSE 
 #> # ℹ 201 more rows
 #> # ℹ 2 more variables: Byelection <lgl>, SupplementaryElection <lgl>
+```
+
+``` r
 
 ## get a list of parliaments
 
@@ -84,6 +105,9 @@ getParliaments()
 #> 10    10 Tenth Parliament 1925-11-14   1926-01-13  1928-10-09      1928-11-16   
 #> # ℹ 37 more rows
 #> # ℹ 2 more variables: ParliamentOrdinal <chr>, FQName <chr>
+```
+
+``` r
 
 ## get two candidate preferred since 1919
 
