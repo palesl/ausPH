@@ -2,8 +2,8 @@
 #' @return a list
 #' @export
 #'
-#' @examples getOccupation()
-getOccupation<-function(){
+#' @examples getOccupations()
+getOccupations<-function(){
   url<- "https://handbookapi.aph.gov.au/api/individuals"
   dat<-rjson::fromJSON(file=url)$value
 
