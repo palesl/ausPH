@@ -35,6 +35,7 @@ At present, the package contains the following functions:
 -   `getParties` (Data on Parties since 1901)
 -   `getPartyService` (Data on Party Service of MPs and Senators since 1901)
 -   `getMinistries` (Data on Ministries and Governing Parties since 1901)
+-   `getOccupations` (Data on all pre-parliamentary occupations listed since 1901)
 
 [^1]: The get2CP function does not retrieve live data from the API, since retrieval in real time is currently infeasible. In addition, some missing elections were identified in the current PH data. Therefore the function returns PH data *with* supplementary data points, documented in the Note variable.
 

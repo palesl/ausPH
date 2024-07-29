@@ -29,6 +29,8 @@ At present, the package contains the following functions:
 - `getPartyService` (Data on Party Service of MPs and Senators since
   1901)
 - `getMinistries` (Data on Ministries and Governing Parties since 1901)
+- `getOccupations` (Data on all pre-parliamentary occupations listed
+  since 1901)
 
 ## Installation
 
