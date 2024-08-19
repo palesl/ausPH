@@ -17,6 +17,14 @@ get2CP<- function(include_byelections=F){
   election_2001<- readr::read_csv(election_2001, show_col_types = FALSE)
   missing<- readr::read_csv(missing, show_col_types = FALSE)
 
+  # filling in election_2001 and missing extra info
+
+  election_2001<-election_2001 |> dplyr::group_by(Name)|>
+    dplyr::mutate(Status = dplyr::case_when(votes_2cp==max(votes_2cp)~"Elected"))
+
+  missing<-missing |> dplyr::group_by(Year, Name) |>
+    dplyr::mutate(Status = dplyr::case_when(margin_percentage_2cp==max(margin_percentage_2cp)~"Elected"))
+
   print("Notes contain information on results missing from the parliamentary handbook")
   if(include_byelections==F){
     dat<-dplyr::bind_rows(main, election_2001, missing)
