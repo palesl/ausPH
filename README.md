@@ -27,8 +27,9 @@ At present, the package contains the following functions:
 - `getShadowMinisters` (Data on Shadow Ministers since 1901)
 - `getParties` (Data on Parties since 1901)
 - `getPartyService` (Data on Party Service of MPs and Senators since
-  1901)
-- `getMinistries` (Data on Ministries and Governing Parties since 1901)
+  1901) 
+- `getMinistries` (Data on Ministries and Governing Parties since
+  1901) 
 - `getOccupations` (Data on all pre-parliamentary occupations listed
   since 1901)
 
@@ -85,9 +86,6 @@ getElections(chamber = "all", byelections = T)
 #> 10 Echuca    1907-07-10    1907 FALSE              P3           309 TRUE  FALSE 
 #> # ℹ 201 more rows
 #> # ℹ 2 more variables: Byelection <lgl>, SupplementaryElection <lgl>
-```
-
-``` r
 
 ## get a list of parliaments
 
@@ -107,9 +105,6 @@ getParliaments()
 #> 10    10 Tenth Parliament 1925-11-14   1926-01-13  1928-10-09      1928-11-16   
 #> # ℹ 37 more rows
 #> # ℹ 2 more variables: ParliamentOrdinal <chr>, FQName <chr>
-```
-
-``` r
 
 ## get two candidate preferred since 1919
 
@@ -132,6 +127,8 @@ get2CP()
 #> # ℹ 5 more variables: margin_percentage_2cp <dbl>, swing_2cp <dbl>,
 #> #   Status <chr>, Note <chr>, source <chr>
 ```
+
+Last updated: 3 June 2025.
 
 ## Image Attribution
 

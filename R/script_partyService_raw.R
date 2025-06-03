@@ -1,5 +1,5 @@
 # # # script_partyServiceRaw.R
-# # # last scraped: 9 Mar 2024
+# # # last scraped: 3 June 2025
 
 # individuals<- ausPH::getIndividuals()|> dplyr::select(1:2)
 #
@@ -23,6 +23,6 @@
 #
 # save(list=c("data"), file="inst/extdata/partyService_raw.Rdata")
 #
-#
+
 
 

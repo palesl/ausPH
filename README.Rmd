@@ -19,7 +19,11 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
-The goal of ausPH is to retrieve data from the [Parliamentary Handbook of the Commonwealth of Australia](https://handbook.aph.gov.au/) and return ready-to-analyse data, formatted as a `tibble`. The package relies on the data from the Handbook site, which is still in beta and subject to change and improvement.
+The goal of ausPH is to retrieve data from the [Parliamentary Handbook
+of the Commonwealth of Australia](https://handbook.aph.gov.au/) and
+return ready-to-analyse data, formatted as a `tibble`. The package
+relies on the data from the Handbook site, which is still in beta and
+subject to change and improvement.
 
 At present, the package contains the following functions:
 
@@ -27,23 +31,34 @@ At present, the package contains the following functions:
 -   `getCommitteeMembers` (Data on committee memberships since 1902)
 -   `getElections` (Data on elections since 1901)[^2]
 -   `getElectorates` (Data on electorates since 1901)
--   `getIndividuals` (Data on individuals and biographical information since 1901)
--   `getParlService` (data on parliamentary tenures of MPs and senators since 1901)
+-   `getIndividuals` (Data on individuals and biographical information
+    since 1901)
+-   `getParlService` (data on parliamentary tenures of MPs and senators
+    since 1901)
 -   `getParliaments` (Data on Parliamentary terms since 1901)
 -   `getMinisters` (Data on Ministers since 1901)
 -   `getShadowMinisters` (Data on Shadow Ministers since 1901)
 -   `getParties` (Data on Parties since 1901)
--   `getPartyService` (Data on Party Service of MPs and Senators since 1901)
--   `getMinistries` (Data on Ministries and Governing Parties since 1901)
--   `getOccupations` (Data on all pre-parliamentary occupations listed since 1901)
+-   `getPartyService` (Data on Party Service of MPs and Senators since
+    1901)
+-   `getMinistries` (Data on Ministries and Governing Parties since
+    1901)
+-   `getOccupations` (Data on all pre-parliamentary occupations listed
+    since 1901)
 
-[^1]: The get2CP function does not retrieve live data from the API, since retrieval in real time is currently infeasible. In addition, some missing elections were identified in the current PH data. Therefore the function returns PH data *with* supplementary data points, documented in the Note variable.
+[^1]: The get2CP function does not retrieve live data from the API,
+    since retrieval in real time is currently infeasible. In addition,
+    some missing elections were identified in the current PH data.
+    Therefore the function returns PH data *with* supplementary data
+    points, documented in the Note variable.
 
-[^2]: missing elections were filled in, with accompanying new unique identifiers.
+[^2]: missing elections were filled in, with accompanying new unique
+    identifiers.
 
 ## Installation
 
-You can install the development version of ausPH from [GitHub](https://github.com/) with:
+You can install the development version of ausPH from
+[GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
@@ -54,7 +69,9 @@ devtools::install_github("palesl/ausPH")
 
 Please cite this package as the following:
 
-> Leslie, Pat. 2024. “AusPH: An R Package to Retrieve Data from the Parliamentary Handbook of the Commonwealth of Australia.” <https://github.com/palesl/ausPH>.
+> Leslie, Pat. 2024. “AusPH: An R Package to Retrieve Data from the
+> Parliamentary Handbook of the Commonwealth of Australia.”
+> <https://github.com/palesl/ausPH>.
 
 Bibtex format entry:
 
@@ -87,6 +104,9 @@ getParliaments()
 get2CP()
 ```
 
+Last updated: 3 June 2025.
+
 ## Image Attribution
 
-Hex image icon: Canberra Parliament House by Anna Hatzisavas from [Noun Project](https://thenounproject.com/browse/icons/term/canberra-parliament-house/ "Canberra Parliament House Icons")
+Hex image icon: Canberra Parliament House by Anna Hatzisavas from [Noun
+Project](https://thenounproject.com/browse/icons/term/canberra-parliament-house/ "Canberra Parliament House Icons")
