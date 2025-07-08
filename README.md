@@ -32,6 +32,8 @@ At present, the package contains the following functions:
   1901) 
 - `getOccupations` (Data on all pre-parliamentary occupations listed
   since 1901)
+- `getSittingDates` (Data on all parliamentary sitting dates since
+  1901) 
 
 ## Installation
 
@@ -90,7 +92,7 @@ getElections(chamber = "all", byelections = T)
 ## get a list of parliaments
 
 getParliaments()
-#> # A tibble: 47 × 8
+#> # A tibble: 48 × 8
 #>      PID Name             DateElection DateOpening DateDissolution ParliamentEnd
 #>    <dbl> <chr>            <date>       <date>      <date>          <date>       
 #>  1     1 First Parliament 1901-03-29   1901-05-09  1903-11-23      1903-12-15   
@@ -103,7 +105,7 @@ getParliaments()
 #>  8     8 Eighth Parliame… 1919-12-13   1920-02-26  1922-11-06      1922-12-15   
 #>  9     9 Ninth Parliament 1922-12-16   1923-02-28  1925-10-03      1925-11-13   
 #> 10    10 Tenth Parliament 1925-11-14   1926-01-13  1928-10-09      1928-11-16   
-#> # ℹ 37 more rows
+#> # ℹ 38 more rows
 #> # ℹ 2 more variables: ParliamentOrdinal <chr>, FQName <chr>
 
 ## get two candidate preferred since 1919
