@@ -1,11 +1,11 @@
 # # # script_partyServiceRaw.R
-# # # last scraped: 3 June 2025
-
+# # # last scraped: 8 September 2025
+#
 # individuals<- ausPH::getIndividuals()|> dplyr::select(1:2)
 #
 # list<- list()
 #
-# for(i in 1:nrow(individuals)){
+# for(i in 1832:nrow(individuals)){
 #
 #   print(paste(i, "out of", nrow(individuals)))
 #   url<- paste0("https://handbookapi.aph.gov.au/api/Parliamentarian/GetTimeline?id=", individuals$PHID[i])

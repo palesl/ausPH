@@ -46,7 +46,7 @@ At present, the package contains the following functions:
 -   `getOccupations` (Data on all pre-parliamentary occupations listed
     since 1901)
 -   `getSittingDates` (Data on all parliamentary sitting dates since
-    1901)
+    1901) 
 
 [^1]: The get2CP function does not retrieve live data from the API,
     since retrieval in real time is currently infeasible. In addition,
@@ -106,7 +106,7 @@ getParliaments()
 get2CP()
 ```
 
-Last updated: 3 June 2025.
+Last updated: 8 September 2025.
 
 ## Image Attribution
 

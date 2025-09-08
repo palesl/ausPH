@@ -4,6 +4,7 @@
 # ausPH <img src="man/figures/ausPH_hex_new.png" align="right" height="139"/>
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
 The goal of ausPH is to retrieve data from the [Parliamentary Handbook
@@ -130,7 +131,7 @@ get2CP()
 #> #   Status <chr>, Note <chr>, source <chr>
 ```
 
-Last updated: 3 June 2025.
+Last updated: 8 September 2025.
 
 ## Image Attribution
 
