@@ -34,7 +34,12 @@ At present, the package contains the following functions:
 - `getOccupations` (Data on all pre-parliamentary occupations listed
   since 1901)
 - `getSittingDates` (Data on all parliamentary sitting dates since
-  1901) 
+  1901)
+
+## Data map
+
+<img width="1205" height="1093" alt="image" src="https://github.com/user-attachments/assets/289701d7-043f-4a53-aaa8-afd2ccc7dcba" />
+Caption: Linkage between primary and foreign keys. Hansard speeches are in development.
 
 ## Installation
 
