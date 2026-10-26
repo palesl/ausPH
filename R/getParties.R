@@ -1,10 +1,17 @@
 #' Data on parties since 1901
-#' @return a tibble
+#' @return a tibble. Note that the Handbook gives a party a new `pID` when it
+#'   changes its name, and that abbreviations are not unique (three parties
+#'   use "LIB"), so `Abbrev` should not be used as a key.
 #' @export
 #'
-#' @examples getParties()
+#' @examples
+#' \donttest{
+#' getParties()
+#' }
 getParties<-function(){
-  url<- "https://handbookapi.aph.gov.au/api/parties"
-  dat<-rjson::fromJSON(file=url)[["value"]]|>dplyr::bind_rows()
-  return(dat)
+  raw<-fetch_handbook("parties")
+  if(is.null(raw)) return(NULL)
+  dat<-records_to_tibble(raw[["value"]])
+  # the Handbook pads many names and abbreviations with trailing spaces
+  dplyr::mutate(dat, dplyr::across(dplyr::where(is.character), trimws))
 }

@@ -4,19 +4,30 @@
 \alias{getElections}
 \title{Data on elections since 1901}
 \usage{
-getElections(chamber = c("all", "house", "senate"), byelections = FALSE)
+getElections(
+  chamber = c("all", "house", "senate"),
+  byelections = FALSE,
+  apply_errata = FALSE
+)
 }
 \arguments{
 \item{chamber}{Select from c("all","house","senate")}
 
-\item{byelections}{Choose to include house by-elections. If .byelections = TRUE,
+\item{byelections}{Choose to include house by-elections. If byelections = TRUE,
 then a list of elections with by-elections and their divisions is returned.}
+
+\item{apply_errata}{if TRUE, replace values listed in \code{\link[=getErrata]{getErrata()}} with
+their corrected values. By default the Handbook's values are returned.}
 }
 \value{
-a tibble
+a tibble. \code{Id} is the package's election identifier (used as
+\code{ElectionID} in \code{\link[=get2CP]{get2CP()}}); \code{HandbookId} is the Handbook's own
+identifier, NA for elections the Handbook does not list. \code{handbook_flag}
+marks elections \code{not_in_handbook} and issues listed in \code{\link[=getErrata]{getErrata()}}.
 }
 \description{
-Data on elections since 1901
+All federal general elections, House by-elections and supplementary
+elections, excluding elections for casual vacancies in the Senate.
 }
 \examples{
 getElections(chamber="all")

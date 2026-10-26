@@ -4,17 +4,21 @@
 \alias{get2CP}
 \title{Data on two candidate preferred results since 1919}
 \usage{
-get2CP(include_byelections = F)
+get2CP(include_byelections = FALSE)
 }
 \arguments{
-\item{include_byelections}{Choose to include house by-elections. If .byelections = TRUE,
-then a list of elections with by-elections and their divisions is returned.}
+\item{include_byelections}{Choose to include house by-elections. If
+include_byelections = TRUE, by-election results are added.}
 }
 \value{
-a tibble
+a tibble. \code{pID} links a candidate's party to \code{\link[=getParties]{getParties()}} where
+the Handbook's party name matches a party exactly; otherwise it is NA.
 }
 \description{
-Data on two candidate preferred results since 1919
+Results come from a stored copy of the Handbook, supplemented with results
+the Handbook is missing (documented in the \code{Note} and \code{source} columns).
+A supplementary result is only used where the Handbook has none for that
+division and year.
 }
 \examples{
 get2CP()

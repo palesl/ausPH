@@ -1,0 +1,65 @@
+1919 Melbourne Ports
+1919 Newcastle
+1922 Balaclava
+1922 Hunter
+1922 Martin
+1922 Swan
+1922 Warringah
+1925 Kennedy
+1928 Darling Downs
+1928 Indi
+1928 Kalgoorlie
+1928 Lilley
+1928 Melbourne Ports
+1928 Moreton
+1928 New England
+1928 Richmond
+1928 Robertson
+1928 Swan
+1928 Warringah
+1928 Wide Bay
+1929 Cowper
+1929 Forrest
+1929 Hindmarsh
+1929 Hunter
+1929 Melbourne
+1929 Melbourne Ports
+1929 Newcastle
+1929 Northern Territory
+1929 Swan
+1929 Yarra
+1931 Forrest
+1931 Gippsland
+1931 Moreton
+1931 Wide Bay
+1934 Kalgoorlie
+1937 Hunter
+1937 Melbourne
+1937 Melbourne Ports
+1937 West Sydney
+1940 Kalgoorlie
+1943 Hunter
+1943 Newcastle
+1951 Darling Downs
+1951 Hindmarsh
+1951 Kalgoorlie
+1954 Angas
+1954 Bradfield
+1954 Hindmarsh
+1954 Mallee
+1954 Murray
+1954 Richmond
+1954 Wentworth
+1955 Bradfield
+1955 Canning
+1955 Cowper
+1955 Curtin
+1955 Darling Downs
+1955 Fisher
+1955 Forrest
+1955 Moore
+1955 Northern Territory
+1955 Richmond
+1955 Warringah
+1963 Northern Territory
+1998 Newcastle

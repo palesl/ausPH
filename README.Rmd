@@ -22,8 +22,8 @@ knitr::opts_chunk$set(
 The goal of ausPH is to retrieve data from the [Parliamentary Handbook
 of the Commonwealth of Australia](https://handbook.aph.gov.au/) and
 return ready-to-analyse data, formatted as a `tibble`. The package
-relies on the data from the Handbook site, which is still in beta and
-subject to change and improvement.
+relies on the data from the Handbook site, which is subject to change
+and improvement.
 
 At present, the package contains the following functions:
 
@@ -45,8 +45,11 @@ At present, the package contains the following functions:
     1901) 
 -   `getOccupations` (Data on all pre-parliamentary occupations listed
     since 1901)
+-   `getQualifications` (Data on all listed qualifications)
+-   `getSchools` (Data on all listed secondary schools)
 -   `getSittingDates` (Data on all parliamentary sitting dates since
-    1901) 
+    1901)
+-   `getErrata` (Known errors in the Handbook, with corrections)
 
 [^1]: The get2CP function does not retrieve live data from the API,
     since retrieval in real time is currently infeasible. In addition,
@@ -56,6 +59,31 @@ At present, the package contains the following functions:
 
 [^2]: missing elections were filled in, with accompanying new unique
     identifiers.
+
+## Errors in the Handbook
+
+The Handbook is an excellent source, but it contains some errors, and
+linking it to other data (such as Hansard) makes them matter. ausPH
+returns the Handbook's data as it is by default, and marks rows with a
+known problem in a `handbook_flag` column, for example terms that overlap
+the member's previous term, or sittings recorded for a chamber that did
+not sit.
+
+Where the correct value is known, it is listed with its evidence in
+`getErrata()`. Pass `apply_errata = TRUE` to `getParlService()`,
+`getPartyService()`, `getSittingDates()` or `getElections()` to use the
+corrected values instead:
+
+``` r
+getParlService(chamber = "house", apply_errata = TRUE)
+```
+
+If you find another error, please [open an
+issue](https://github.com/palesl/ausPH/issues).
+
+Some functions return a stored copy of the Handbook (retrieving these
+live would take hours); the date of the copy is in the `scraped`
+attribute, e.g. `attr(getParlService(), "scraped")`.
 
 ## Installation
 
@@ -71,19 +99,19 @@ devtools::install_github("palesl/ausPH")
 
 Please cite this package as the following:
 
-> Leslie, Pat. 2024. “AusPH: An R Package to Retrieve Data from the
-> Parliamentary Handbook of the Commonwealth of Australia.”
-> <https://github.com/palesl/ausPH>.
+> Leslie, Pat. 2026. “ausPH: An R Package to Retrieve Data from the
+> Parliamentary Handbook of the Commonwealth of Australia.” R package
+> version 1.0.0. <https://github.com/palesl/ausPH>.
 
 Bibtex format entry:
 
 ```         
-@misc{leslie_ausph_2024,
+@misc{leslie_ausph_2026,
     title = {{ausPH}: {An} {R} package to retrieve data from the {Parliamentary} {Handbook} of the {Commonwealth} of {Australia}.},
     url = {https://github.com/palesl/ausPH},
     author = {Leslie, Pat},
-    year = {2024},
-    note = {original-date: 2022-07-29T00:58:54Z},
+    year = {2026},
+    note = {R package version 1.0.0},
 }
 ```
 
@@ -104,9 +132,13 @@ getParliaments()
 ## get two candidate preferred since 1919
 
 get2CP()
+
+## known errors in the Handbook
+
+getErrata()
 ```
 
-Last updated: 8 September 2025.
+Last updated: 26 October 2026. See `NEWS.md` for changes.
 
 ## Image Attribution
 

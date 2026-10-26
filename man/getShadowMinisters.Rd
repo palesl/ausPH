@@ -7,11 +7,15 @@
 getShadowMinisters()
 }
 \value{
-a tibble
+a tibble with one row per shadow ministerial role. \code{RDateStart}
+and \code{RDateEnd} are the dates of the role; \code{MDateStart} and \code{MDateEnd} are
+the dates of the shadow ministry.
 }
 \description{
 Data on Shadow Ministers since 1901
 }
 \examples{
+\donttest{
 getShadowMinisters()
+}
 }

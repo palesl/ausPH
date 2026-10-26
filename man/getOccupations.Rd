@@ -7,11 +7,13 @@
 getOccupations()
 }
 \value{
-a list
+a data frame with one row per person and occupation
 }
 \description{
 Data on all listed prior occupations held (both primary and secondary)
 }
 \examples{
+\donttest{
 getOccupations()
+}
 }

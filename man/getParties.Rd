@@ -7,11 +7,15 @@
 getParties()
 }
 \value{
-a tibble
+a tibble. Note that the Handbook gives a party a new \code{pID} when it
+changes its name, and that abbreviations are not unique (three parties
+use "LIB"), so \code{Abbrev} should not be used as a key.
 }
 \description{
 Data on parties since 1901
 }
 \examples{
+\donttest{
 getParties()
+}
 }

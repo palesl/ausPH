@@ -266,3 +266,7 @@ Id,Name,State,Year,ElectionID,Candidate,Party,votes_2cp,margin_2cp,margin_percen
 395,Wilmot,NA,1939,395,"Spurr, Lancelot",Labor,11257,69,50.15,5.3,,NA,NA
 9008,Dickson,Qld,1993,9008,"Flegg, Bruce",Liberal (1946-),33686,-347,49.74,0,,NA,"originally wrong date in Parl house. Election was supplementary, not part of 1993 federal. Fixed"
 9008,Dickson,Qld,1993,9008,"Lavarch, Michael",Labor,34033,347,50.26,0,Elected,NA,"originally wrong date in Parl house. Election was supplementary, not part of 1993 federal. Fixed"
+408,Aston,NA,2023,408,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+409,Fadden,NA,2023,409,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+416,Dunkley,NA,2024,416,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election
+417,Cook,NA,2024,417,NA,NA,NA,NA,NA,NA,NA,NA,Missing 2cp from by-election

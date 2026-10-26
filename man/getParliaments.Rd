@@ -13,5 +13,7 @@ a tibble
 Data on Parliamentary terms since 1901
 }
 \examples{
+\donttest{
 getParliaments()
+}
 }

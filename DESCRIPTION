@@ -1,21 +1,28 @@
 Package: ausPH
 Title: Retrieve Data from the Parliamentary Handbook of the Commonwealth of Australia
-Version: 0.0.0.9004
+Version: 1.0.0
 Authors@R: 
     person("Pat", "Leslie", , "patrick.leslie@anu.edu.au", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-9218-8981"))
-Description: This package retrieves data from the Parliamentary Library's Parliamentary Handbook (handbook.aph.gov.au/). The first example is two candidate preferred results by year and by district. 
+Description: Retrieves data from the Australian Parliamentary Library's
+    Parliamentary Handbook <https://handbook.aph.gov.au/> and returns it as
+    tidy tables: members and senators, their parliamentary and party service,
+    ministries, shadow ministries, committees, parties, electorates,
+    parliaments, sitting dates, elections and two candidate preferred results.
+    Known errors in the Handbook are flagged, and can optionally be corrected
+    from a documented errata table.
 License: MIT + file LICENSE
+URL: https://github.com/palesl/ausPH
+BugReports: https://github.com/palesl/ausPH/issues
 Encoding: UTF-8
+Language: en-AU
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
-Depends: R (>= 3.5)
+Depends: R (>= 4.1.0)
 Imports: 
     rjson,
     dplyr,
-    readr,
-    readxl,
-    stringr
+    readr
+Config/roxygen2/version: 8.0.0

@@ -7,11 +7,15 @@
 getMinistries()
 }
 \value{
-a tibble
+a tibble with one row per ministry and governing party. Ministries
+for which the Handbook lists no party (e.g. the first Barton Ministry) are
+kept, with \code{Party} and \code{pID} set to NA.
 }
 \description{
 Data on Ministries and Governing Parties since 1901
 }
 \examples{
+\donttest{
 getMinistries()
+}
 }

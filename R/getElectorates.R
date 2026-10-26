@@ -3,14 +3,15 @@
 #' @return a tibble
 #' @export
 #'
-#' @examples getElectorates()
+#' @examples
+#' \donttest{
+#' getElectorates()
+#' }
 getElectorates<-function(){
-  url<- "https://handbookapi.aph.gov.au/api/electorates"
-  dat<-rjson::fromJSON(file=url)[["value"]]|>dplyr::bind_rows()
-  dat$Established<- as.Date(dat$Established)
-  dat$Ceased<- as.Date(dat$Ceased)
-
-  return(dat)
-
+  raw<-fetch_handbook("electorates")
+  if(is.null(raw)) return(NULL)
+  dat<-records_to_tibble(raw[["value"]])
+  dat$Established<-parse_handbook_date(dat$Established)
+  dat$Ceased<-parse_handbook_date(dat$Ceased)
+  dat
 }
-

@@ -13,5 +13,7 @@ a tibble
 Data on electorates since 1901
 }
 \examples{
+\donttest{
 getElectorates()
+}
 }

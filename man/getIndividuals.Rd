@@ -7,11 +7,13 @@
 getIndividuals()
 }
 \value{
-a list
+a tibble
 }
 \description{
 Data on individuals and biographical information since 1901
 }
 \examples{
+\donttest{
 getIndividuals()
+}
 }

@@ -2,15 +2,24 @@
 % Please edit documentation in R/getPartyService.R
 \name{getPartyService}
 \alias{getPartyService}
-\title{data on party service of MPs and senators since 1901}
+\title{Data on party service of MPs and senators since 1901}
 \usage{
-getPartyService()
+getPartyService(apply_errata = FALSE)
+}
+\arguments{
+\item{apply_errata}{if TRUE, replace values listed in \code{\link[=getErrata]{getErrata()}} with
+their corrected values. By default the Handbook's values are returned.}
 }
 \value{
-a tibble
+a tibble. \code{handbook_flag} marks rows with a known problem in the
+Handbook: \code{same_day_party_record} (a one-day record that starts on the
+same day as another party record for the same person),
+\code{placeholder_end_date} (the Handbook has 1900-01-01, returned as NA) and
+any issue listed in \code{\link[=getErrata]{getErrata()}}.
 }
 \description{
-up to date as of 9th March 2024
+Returns a stored copy of the Handbook's party service records. The date of
+the copy is in the \code{scraped} attribute of the result.
 }
 \examples{
 getPartyService()

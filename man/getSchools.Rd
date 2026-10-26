@@ -7,11 +7,14 @@
 getSchools()
 }
 \value{
-a list
+a data frame with one row per person and school, as listed in the
+Handbook (some entries name more than one school)
 }
 \description{
 Data on all listed Secondary Schools
 }
 \examples{
+\donttest{
 getSchools()
+}
 }

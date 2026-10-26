@@ -1,3 +1,9 @@
+# Original (2022) 2CP scrape. Superseded in 1.0.0 by scrape_2cp.R for general
+# elections: the per-division endpoint used here also returns by-election
+# results from the same parliament, which duplicated rows in
+# main_elections_2cp.csv. Its by-election section is kept as the record of how
+# inst/extdata/by_elections_2cp.csv was built.
+#
 # # script pre built to download and store the data for 2CP in house elections
 #
 # # full fed House elections...

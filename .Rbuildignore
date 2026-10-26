@@ -5,5 +5,8 @@
 ^ausPH\.Rproj$
 ^LICENSE\.md$
 ^README\.Rmd$
-^prebuiltelectionscrape\.R$
-^script_2cp_2001\.R$
+^data-raw$
+^linkage_issues$
+\.DS_Store$
+^cran-comments\.md$
+^CRAN-SUBMISSION$

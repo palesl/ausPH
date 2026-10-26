@@ -7,11 +7,13 @@
 getCommitteeMembers()
 }
 \value{
-a tibble
+a tibble. \code{end_date} is NA for current memberships.
 }
 \description{
 Data on committee memberships since 1902
 }
 \examples{
+\donttest{
 getCommitteeMembers()
+}
 }

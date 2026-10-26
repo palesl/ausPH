@@ -7,11 +7,15 @@
 getMinisters()
 }
 \value{
-a tibble
+a tibble with one row per ministerial role. \code{RDateStart} and
+\code{RDateEnd} are the dates of the role; \code{MDateStart} and \code{MDateEnd} are the
+dates of the ministry.
 }
 \description{
 Data on Ministers since 1901
 }
 \examples{
+\donttest{
 getMinisters()
+}
 }

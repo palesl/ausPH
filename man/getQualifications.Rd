@@ -7,11 +7,13 @@
 getQualifications()
 }
 \value{
-a list
+a data frame with one row per person and qualification
 }
 \description{
 Data on all listed Qualifications
 }
 \examples{
+\donttest{
 getQualifications()
+}
 }

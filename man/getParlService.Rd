@@ -2,18 +2,25 @@
 % Please edit documentation in R/getParlService.R
 \name{getParlService}
 \alias{getParlService}
-\title{data on parliamentary tenures of MPs and senators since 1901}
+\title{Data on parliamentary tenures of MPs and senators since 1901}
 \usage{
-getParlService(chamber = c("all", "house", "senate"))
+getParlService(chamber = c("all", "house", "senate"), apply_errata = FALSE)
 }
 \arguments{
-\item{chamber}{choose to include MPs, senators or both.}
+\item{chamber}{choose to include MPs ("house"), senators ("senate") or both ("all").}
+
+\item{apply_errata}{if TRUE, replace values listed in \code{\link[=getErrata]{getErrata()}} with
+their corrected values. By default the Handbook's values are returned.}
 }
 \value{
-a tibble
+a tibble. \code{handbook_flag} marks rows with a known problem in the
+Handbook: \code{overlapping_term} (the term starts before the member's
+previous term ends), \code{placeholder_end_date} (the Handbook has 1900-01-01,
+returned as NA) and any issue listed in \code{\link[=getErrata]{getErrata()}}.
 }
 \description{
-up to date as of 13th December 2022
+Returns a stored copy of the Handbook's parliamentary service records. The
+date of the copy is in the \code{scraped} attribute of the result.
 }
 \examples{
 getParlService(chamber="house")

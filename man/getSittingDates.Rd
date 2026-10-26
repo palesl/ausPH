@@ -2,16 +2,25 @@
 % Please edit documentation in R/getSittingDates.R
 \name{getSittingDates}
 \alias{getSittingDates}
-\title{data on sitting dates in the federal parliament}
+\title{Data on sitting dates in the federal parliament}
 \usage{
-getSittingDates()
+getSittingDates(apply_errata = FALSE)
+}
+\arguments{
+\item{apply_errata}{if TRUE, replace values listed in \code{\link[=getErrata]{getErrata()}} with
+their corrected values. By default the Handbook's values are returned.}
 }
 \value{
-a tibble
+a tibble with one row per sitting date and whether each chamber
+sat. \code{handbook_flag} marks dates listed in \code{\link[=getErrata]{getErrata()}}, e.g.
+\code{chamber_did_not_sit}.
 }
 \description{
-data on sitting dates in the federal parliament
+Dates up to the end of the stored copy come from the package; later years
+are fetched from the Handbook when the function is called.
 }
 \examples{
+\donttest{
 getSittingDates()
+}
 }

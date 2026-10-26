@@ -1,47 +1,56 @@
-#' data on parliamentary tenures of MPs and senators since 1901
+#' Data on parliamentary tenures of MPs and senators since 1901
 #'
-#' up to date as of 13th December 2022
+#' Returns a stored copy of the Handbook's parliamentary service records. The
+#' date of the copy is in the `scraped` attribute of the result.
 #'
-#' @param chamber choose to include MPs, senators or both.
+#' @param chamber choose to include MPs ("house"), senators ("senate") or both ("all").
+#' @param apply_errata if TRUE, replace values listed in [getErrata()] with
+#'   their corrected values. By default the Handbook's values are returned.
 #'
-#' @return a tibble
+#' @return a tibble. `handbook_flag` marks rows with a known problem in the
+#'   Handbook: `overlapping_term` (the term starts before the member's
+#'   previous term ends), `placeholder_end_date` (the Handbook has 1900-01-01,
+#'   returned as NA) and any issue listed in [getErrata()].
 #' @export
 #'
 #' @examples getParlService(chamber="house")
-getParlService<- function(chamber=c('all', 'house', 'senate')){
+getParlService<- function(chamber=c('all', 'house', 'senate'), apply_errata=FALSE){
+  chamber<-match.arg(chamber)
+  PHID <- DisplayName <- MemberOrSenator <- Electorate <-
+    DateStart <- DateEnd <- Description <- handbook_flag <- NULL
 
-  data <- system.file("extdata", "tenures_raw.Rdata", package = "ausPH")
+  data <- load_extdata("tenures_raw.Rdata")
+  scraped <- attr(data, "scraped")
 
-  load(data)
+  keys<-paste(data$PHID, substr(data$DateStart,1,10), substr(data$DateEnd,1,10), sep="|")
+  placeholder<-is_placeholder_date(data$DateEnd)
 
-  # clean dates
+  data$DateStart<-parse_handbook_date(data$DateStart)
+  data$DateEnd<-parse_handbook_date(data$DateEnd)
+  data$handbook_flag<-NA_character_
+  data$handbook_flag<-add_flag(data$handbook_flag, placeholder, "placeholder_end_date")
 
-  data$DateStart<-gsub("T00:00:00","", data$DateStart)
-  data$DateEnd<-gsub("T00:00:00","", data$DateEnd)
+  data<-apply_errata_table(data, "parl_service", keys, apply_errata)
 
-  data$DateStart<-as.Date(data$DateStart)
-  data$DateEnd<-as.Date(data$DateEnd)
-  PHID <- DisplayName <- Senate <-  senate <-MemberOrSenator <- Electorate <-
-    DateStart <- DateEnd <-Description<-NULL
+  # a term that starts before the same person's previous term has ended
+  data<-data|>dplyr::arrange(PHID, DateStart)
+  prev_end<-dplyr::lag(data$DateEnd)
+  same_person<-data$PHID==dplyr::lag(data$PHID)
+  overlap<-same_person & !is.na(prev_end) & data$DateStart < prev_end
+  data$handbook_flag<-add_flag(data$handbook_flag, overlap, "overlapping_term")
 
-
-  data<- data|>dplyr::select(PHID, DisplayName,MemberOrSenator, Electorate, DateStart,
-                      DateEnd, Description)
-
-  data<- data|>dplyr::as_tibble()
-
-  if(chamber=='all'){
-    return(data)
-  }
+  data<- data|>dplyr::select(PHID, DisplayName, MemberOrSenator, Electorate, DateStart,
+                      DateEnd, Description, handbook_flag)|>
+    dplyr::as_tibble()
 
   if(chamber=='house'){
-    data_house<-data|>dplyr::filter(MemberOrSenator=="Member")|>
+    data<-data|>dplyr::filter(MemberOrSenator=="Member")|>
       dplyr::select(-MemberOrSenator)
-    return(data_house)
   }
-
   if(chamber=='senate'){
-    data_senate<-data|>dplyr::filter(MemberOrSenator=="Senator")|>
+    data<-data|>dplyr::filter(MemberOrSenator=="Senator")|>
       dplyr::select(-MemberOrSenator)
-    return(data_senate)  }
+  }
+  attr(data, "scraped")<-scraped
+  data
 }

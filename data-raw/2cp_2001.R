@@ -1,6 +1,9 @@
+# Superseded in 1.0.0: the Handbook now has 2CP results for the 2001 election.
+# Kept as the record of how results_2001_2cp.csv was built from AEC files.
+#
 # # script to complete 2cp and election
 #
-# files<- list.files("inst/inputs/Election_2001", full.names = T)
+# files<- list.files("data-raw/inputs/Election_2001", full.names = T)
 #
 # count<-1
 # list2001_2cp<-list()
@@ -8,7 +11,7 @@
 # for(s in 1:8){
 #   dat<- readxl::read_excel(files[s])
 #   div<- 'none'
-#   state<- gsub(".xls","" ,list.files("inst/inputs/Election_2001")[s])
+#   state<- gsub(".xls","" ,list.files("data-raw/inputs/Election_2001")[s])
 #
 #   for (i in 1:nrow(dat)){
 #
@@ -50,5 +53,5 @@
 #
 # out<- dplyr::bind_rows(list2001_2cp)
 #
-# readr::write_csv(out,file="inst/extdata/results_2001_2cp.csv")
+# readr::write_csv(out,file="data-raw/results_2001_2cp.csv")
 #

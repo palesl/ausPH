@@ -3,19 +3,17 @@
 #' @return a tibble
 #' @export
 #'
-#' @examples getParliaments()
+#' @examples
+#' \donttest{
+#' getParliaments()
+#' }
 getParliaments<-function(){
-  ParliamentNext<-PartiesByParliament<- NULL
-  url<- "https://handbookapi.aph.gov.au/api/parliaments"
-  dat<-rjson::fromJSON(file=url)[["value"]]|>dplyr::bind_rows()|>
-    dplyr::select(-ParliamentNext, -PartiesByParliament)|>
+  raw<-fetch_handbook("parliaments")
+  if(is.null(raw)) return(NULL)
+  dat<-records_to_tibble(raw[["value"]])|>
     dplyr::distinct()
-  dat$DateElection<- as.Date(dat$DateElection)
-  dat$DateOpening<- as.Date(dat$DateOpening)
-  dat$DateDissolution<- as.Date(dat$DateDissolution)
-  dat$ParliamentEnd<- as.Date(dat$ParliamentEnd)
-
-
-  return(dat)
-
+  for(col in c("DateElection","DateOpening","DateDissolution","ParliamentEnd")){
+    dat[[col]]<-parse_handbook_date(dat[[col]])
+  }
+  dat
 }
