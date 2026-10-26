@@ -93,15 +93,7 @@ attribute, e.g. `attr(getElections("all"), "updated")`.
 ## Installation
 
 You can install the development version of ausPH from
-[GitHub](https://github.com/palesl/ausPH) with
-[pak](https://pak.r-lib.org/):
-
-``` r
-# install.packages("pak")
-pak::pak("palesl/ausPH")
-```
-
-or, if you already use it, with `remotes`:
+[GitHub](https://github.com/palesl/ausPH) with:
 
 ``` r
 # install.packages("remotes")
