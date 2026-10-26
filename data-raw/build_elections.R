@@ -11,6 +11,8 @@
 #    Id = HandbookId.
 # Run from the package root.
 
+devtools::load_all()
+
 curated<-readxl::read_excel("data-raw/ElectionDates.xlsx")
 curated$DateElection<-as.Date(curated$DateElection)
 
@@ -21,7 +23,7 @@ live<-rjson::fromJSON(file="https://handbookapi.aph.gov.au/api/Elections/Electio
                           Reps=r$Reps, Senate=r$Senate))|>
   dplyr::bind_rows()
 
-parliaments<-ausPH::getParliaments()
+parliaments<-getParliaments()
 
 # general elections are matched by date, by-elections by division and year
 key<-function(division, year, date) ifelse(is.na(division) | division=="Federal",
@@ -66,3 +68,4 @@ elections<-dplyr::bind_rows(out, new)|>
   dplyr::arrange(DateElection, Division)
 
 readr::write_csv(elections, "inst/extdata/elections.csv", na="")
+record_scrape_date("elections")

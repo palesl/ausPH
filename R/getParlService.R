@@ -1,26 +1,42 @@
 #' Data on parliamentary tenures of MPs and senators since 1901
 #'
-#' Returns a stored copy of the Handbook's parliamentary service records. The
-#' date of the copy is in the `scraped` attribute of the result.
+#' By default the whole table is retrieved from the Handbook (one request).
+#' If the Handbook cannot be reached, or `update = FALSE`, the copy stored in
+#' the package is returned instead. The date the data was retrieved is in the
+#' `scraped` attribute of the result.
 #'
 #' @param chamber choose to include MPs ("house"), senators ("senate") or both ("all").
 #' @param apply_errata if TRUE, replace values listed in [getErrata()] with
 #'   their corrected values. By default the Handbook's values are returned.
+#' @param update if TRUE (the default), retrieve the current data from the
+#'   Handbook; if FALSE, use the stored copy.
 #'
-#' @return a tibble. `handbook_flag` marks rows with a known problem in the
-#'   Handbook: `overlapping_term` (the term starts before the member's
-#'   previous term ends), `placeholder_end_date` (the Handbook has 1900-01-01,
-#'   returned as NA) and any issue listed in [getErrata()].
+#' @return a tibble. `DateEnd` is NA for terms that have not ended.
+#'   `handbook_flag` marks rows with a known problem in the Handbook:
+#'   `overlapping_term` (the term starts before the member's previous term
+#'   ends), `placeholder_end_date` (a term that is not the member's latest has
+#'   no end date in the Handbook) and any issue listed in [getErrata()].
 #' @export
 #'
-#' @examples getParlService(chamber="house")
-getParlService<- function(chamber=c('all', 'house', 'senate'), apply_errata=FALSE){
+#' @examples
+#' \donttest{
+#' getParlService(chamber="house")
+#' }
+#' # the copy stored in the package, without querying the Handbook
+#' getParlService(chamber="house", update=FALSE)
+getParlService<- function(chamber=c('all', 'house', 'senate'), apply_errata=FALSE, update=TRUE){
   chamber<-match.arg(chamber)
   PHID <- DisplayName <- MemberOrSenator <- Electorate <-
     DateStart <- DateEnd <- Description <- handbook_flag <- NULL
 
-  data <- load_extdata("tenures_raw.Rdata")
-  scraped <- attr(data, "scraped")
+  data<-if(update) handbook_parl_service() else NULL
+  if(is.null(data)){
+    if(update) message("Returning the stored copy of the Handbook instead.")
+    data<-load_extdata("tenures_raw.Rdata")
+    scraped<-attr(data, "scraped")
+  } else {
+    scraped<-as.character(Sys.Date())
+  }
 
   keys<-paste(data$PHID, substr(data$DateStart,1,10), substr(data$DateEnd,1,10), sep="|")
   placeholder<-is_placeholder_date(data$DateEnd)
@@ -28,12 +44,16 @@ getParlService<- function(chamber=c('all', 'house', 'senate'), apply_errata=FALS
   data$DateStart<-parse_handbook_date(data$DateStart)
   data$DateEnd<-parse_handbook_date(data$DateEnd)
   data$handbook_flag<-NA_character_
-  data$handbook_flag<-add_flag(data$handbook_flag, placeholder, "placeholder_end_date")
 
   data<-apply_errata_table(data, "parl_service", keys, apply_errata)
 
+  data<-data|>dplyr::mutate(placeholder=placeholder)|>dplyr::arrange(PHID, DateStart)
+
+  # an open end date is expected on the latest term, not on an earlier one
+  latest<-!duplicated(data$PHID, fromLast=TRUE)
+  data$handbook_flag<-add_flag(data$handbook_flag, data$placeholder & !latest, "placeholder_end_date")
+
   # a term that starts before the same person's previous term has ended
-  data<-data|>dplyr::arrange(PHID, DateStart)
   prev_end<-dplyr::lag(data$DateEnd)
   same_person<-data$PHID==dplyr::lag(data$PHID)
   overlap<-same_person & !is.na(prev_end) & data$DateStart < prev_end

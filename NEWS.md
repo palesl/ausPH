@@ -1,3 +1,46 @@
+# ausPH 1.0.1
+
+## Live updates
+
+* Functions backed by a stored copy of the Handbook now bring it up to date,
+  as `getSittingDates()` already did, through a new `update` argument:
+  * `getParlService()` retrieves the whole table from the Handbook's records
+    of service in a single request (previously 1,881 requests). This source is
+    also more accurate: the per-person timelines used before list two
+    senators appointed in August 2026 as House members with no electorate.
+  * `getElections()` adds elections the Handbook has listed since the stored
+    copy. Their `FullSenateElection` is NA, as the Handbook's list does not
+    say whether an election was a double dissolution.
+  * `get2CP()` adds 2CP results for those elections.
+  * `getPartyService(update = TRUE)` re-fetches the records of everyone who
+    has joined or served in parliament since the stored copy. The Handbook
+    has no bulk source for party service (its records of service leave most
+    party dates blank), so this takes about 250 requests and is off by
+    default.
+* `update` defaults to `TRUE` except for `getPartyService()`. With
+  `update = FALSE`, or when the Handbook cannot be reached, the stored copy
+  is returned (with a message in the second case). The date of any update is
+  in a new `updated` attribute.
+* The stored tables and the updates are built by the same functions, so they
+  have the same layout; the scripts in `data-raw/` now use them.
+* `getParlService()`: `placeholder_end_date` now flags only terms that are
+  not the member's latest. The Handbook's records of service use 1900-01-01
+  for every term that has not ended, which is returned as NA as before.
+
+## Other changes
+
+* `getOccupations()`, `getQualifications()` and `getSchools()` now return
+  tibbles, like every other function.
+* `get2CP()` and `getElections()` now record the date their stored copy was
+  taken from the Handbook in the `scraped` attribute, like
+  `getParlService()`, `getPartyService()` and `getSittingDates()`.
+* README: the data map is redrawn from the package's actual columns and
+  keys (its source is `data-raw/data_map.tex`), and out-of-date statements
+  are corrected.
+* Documented a change from 1.0.0 that was missing from its notes:
+  `getParliaments()` now returns `ParliamentNext`, the `PID` of the
+  following parliament.
+
 # ausPH 1.0.0
 
 First major release. All stored data refreshed from the Parliamentary

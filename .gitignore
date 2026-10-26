@@ -4,3 +4,6 @@
 .Ruserdata
 linkage_issues
 .DS_Store
+data-raw/*.aux
+data-raw/*.log
+data-raw/*.pdf

@@ -7,7 +7,7 @@ test_that("errata table is well formed", {
 })
 
 test_that("getParlService returns parsed dates and flags overlaps", {
-  ten <- getParlService("all")
+  ten <- getParlService("all", update = FALSE)
   expect_s3_class(ten$DateStart, "Date")
   expect_false(any(ten$DateEnd %in% as.Date("1900-01-01")))
   calwell <- ten[ten$PHID == "BV8" & ten$DateStart == as.Date("1946-06-28"), ]
@@ -16,8 +16,14 @@ test_that("getParlService returns parsed dates and flags overlaps", {
   expect_false(is.null(attr(ten, "scraped")))
 })
 
+test_that("open end dates are only flagged on earlier terms", {
+  ten <- getParlService("all", update = FALSE)
+  latest <- !duplicated(ten$PHID, fromLast = TRUE)
+  expect_false(any(grepl("placeholder_end_date", ten$handbook_flag[latest])))
+})
+
 test_that("apply_errata removes the overlaps it corrects", {
-  ten <- getParlService("all", apply_errata = TRUE)
+  ten <- getParlService("all", apply_errata = TRUE, update = FALSE)
   expect_false(any(ten$PHID == "BV8" & ten$DateStart == as.Date("1946-06-28")))
   overlapping <- grepl("overlapping_term", ten$handbook_flag) &
     !grepl("[corrected]", ten$handbook_flag, fixed = TRUE)
@@ -25,8 +31,8 @@ test_that("apply_errata removes the overlaps it corrects", {
 })
 
 test_that("getParlService filters by chamber", {
-  expect_false("MemberOrSenator" %in% names(getParlService("house")))
-  expect_error(getParlService("lords"))
+  expect_false("MemberOrSenator" %in% names(getParlService("house", update = FALSE)))
+  expect_error(getParlService("lords", update = FALSE))
 })
 
 test_that("getPartyService flags same-day records", {
@@ -37,21 +43,30 @@ test_that("getPartyService flags same-day records", {
 })
 
 test_that("getElections covers recent elections with Handbook ids", {
-  e <- suppressMessages(getElections("all", byelections = TRUE))
+  e <- suppressMessages(getElections("all", byelections = TRUE, update = FALSE))
   expect_true(all(c(2022, 2025) %in% e$Year[e$Division == "Federal"]))
   expect_true(all(c("Aston", "Fadden", "Dunkley", "Cook") %in% e$Division[e$Year >= 2023]))
   expect_false(any(duplicated(e$Id)))
   expect_equal(e$handbook_flag[e$Id == 9003], "not_in_handbook")
 
-  fixed <- suppressMessages(getElections("all", byelections = TRUE, apply_errata = TRUE))
+  fixed <- suppressMessages(getElections("all", byelections = TRUE, apply_errata = TRUE, update = FALSE))
   expect_equal(fixed$DateElection[fixed$Id == 9004], as.Date("1945-08-18"))
   expect_error(getElections(), "chamber must be specified")
 })
 
 test_that("get2CP has at most one result pair per division and election", {
-  two <- suppressMessages(get2CP())
+  two <- suppressMessages(get2CP(update = FALSE))
   expect_true(all(c(2022, 2025) %in% two$Year))
   per_division <- table(paste(two$Year, two$Name))
   expect_true(all(per_division <= 2))
   expect_gt(mean(per_division == 2), 0.99)
+})
+
+test_that("every function backed by stored data records its scrape date", {
+  stored <- list(getParlService(update = FALSE), getPartyService(),
+                 suppressMessages(get2CP(update = FALSE)),
+                 suppressMessages(getElections("all", update = FALSE)))
+  for (dat in stored) {
+    expect_match(attr(dat, "scraped"), "^[0-9]{4}-[0-9]{2}-[0-9]{2}$")
+  }
 })

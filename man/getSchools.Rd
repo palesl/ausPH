@@ -7,7 +7,7 @@
 getSchools()
 }
 \value{
-a data frame with one row per person and school, as listed in the
+a tibble with one row per person and school, as listed in the
 Handbook (some entries name more than one school)
 }
 \description{

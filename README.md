@@ -11,12 +11,13 @@ The goal of ausPH is to retrieve data from the [Parliamentary Handbook
 of the Commonwealth of Australia](https://handbook.aph.gov.au/) and
 return ready-to-analyse data, formatted as a `tibble`. The package
 relies on the data from the Handbook site, which is subject to change
-and improvement.
+and improvement. Functions that query the Handbook’s API return `NULL`,
+with a message, if the API cannot be reached.
 
 At present, the package contains the following functions:
 
 - `get2CP` (Data on two candidate preferred results since 1919)[^1]
-- `getCommitteeMembers` (Data on committee memberships since 1902)
+- `getCommitteeMembers` (Data on committee memberships since 1901)
 - `getElections` (Data on elections since 1901)[^2]
 - `getElectorates` (Data on electorates since 1901)
 - `getIndividuals` (Data on individuals and biographical information
@@ -41,23 +42,26 @@ At present, the package contains the following functions:
 
 ## Data map
 
-<img width="1205" height="1093" alt="image" src="https://github.com/user-attachments/assets/289701d7-043f-4a53-aaa8-afd2ccc7dcba" />
-Caption: Linkage between primary and foreign keys. Hansard speeches are
-in development.
+How the tables returned by ausPH link together. Hansard speeches are in
+development.
+
+<img src="man/figures/data_map.png" alt="Diagram of the tables returned by ausPH and the keys that link them" width="100%"/>
+
+The diagram is drawn from `data-raw/data_map.tex`.
 
 ## Errors in the Handbook
 
-The Handbook is an excellent source, but it contains some errors, and
-linking it to other data (such as Hansard) makes them matter. ausPH
+The Handbook is an excellent source, but it contains some errors. ausPH
 returns the Handbook’s data as it is by default, and marks rows with a
 known problem in a `handbook_flag` column, for example terms that
 overlap the member’s previous term, or sittings recorded for a chamber
 that did not sit.
 
-Where the correct value is known, it is listed with its evidence in
-`getErrata()`. Pass `apply_errata = TRUE` to `getParlService()`,
-`getPartyService()`, `getSittingDates()` or `getElections()` to use the
-corrected values instead:
+The flag column is returned by `getParlService()`, `getPartyService()`,
+`getSittingDates()` and `getElections()`. Where the correct value is
+known, it is listed with its evidence in `getErrata()`, and passing
+`apply_errata = TRUE` to these functions uses the corrected value
+instead (no corrections are listed yet for `getPartyService()`):
 
 ``` r
 getParlService(chamber = "house", apply_errata = TRUE)
@@ -66,18 +70,42 @@ getParlService(chamber = "house", apply_errata = TRUE)
 If you find another error, please [open an
 issue](https://github.com/palesl/ausPH/issues).
 
-Some functions return a stored copy of the Handbook (retrieving these
-live would take hours); the date of the copy is in the `scraped`
-attribute, e.g. `attr(getParlService(), "scraped")`.
+## Stored data and updates
+
+Some tables would take many requests to retrieve from the Handbook in
+full, so the package stores a copy and, by default, brings it up to date
+when you call the function:
+
+| Function | By default | Requests |
+|----|----|----|
+| `getParlService()` | retrieves the whole table from the Handbook | 1 |
+| `getElections()` | adds elections listed since the stored copy | 2 |
+| `get2CP()` | adds results for elections since the stored copy | about 3, plus 1 per new election |
+| `getSittingDates()` | adds sitting dates after the stored copy | 1 per year |
+| `getPartyService()` | stored copy only; `update = TRUE` re-fetches everyone who has served since (about 250 requests, two to three minutes) | 0 |
+
+Use `update = FALSE` to work from the stored copy alone, e.g. offline or
+for reproducibility. If the Handbook cannot be reached, these functions
+return the stored copy with a message. The date of the stored copy is in
+the `scraped` attribute and the date of any update in the `updated`
+attribute, e.g. `attr(getElections("all"), "updated")`.
 
 ## Installation
 
 You can install the development version of ausPH from
-[GitHub](https://github.com/) with:
+[GitHub](https://github.com/palesl/ausPH) with
+[pak](https://pak.r-lib.org/):
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("palesl/ausPH")
+# install.packages("pak")
+pak::pak("palesl/ausPH")
+```
+
+or, if you already use it, with `remotes`:
+
+``` r
+# install.packages("remotes")
+remotes::install_github("palesl/ausPH")
 ```
 
 ## Citation
@@ -86,7 +114,7 @@ Please cite this package as the following:
 
 > Leslie, Pat. 2026. “ausPH: An R Package to Retrieve Data from the
 > Parliamentary Handbook of the Commonwealth of Australia.” R package
-> version 1.0.0. <https://github.com/palesl/ausPH>.
+> version 1.0.1. <https://github.com/palesl/ausPH>.
 
 Bibtex format entry:
 
@@ -95,7 +123,7 @@ Bibtex format entry:
         url = {https://github.com/palesl/ausPH},
         author = {Leslie, Pat},
         year = {2026},
-        note = {R package version 1.0.0},
+        note = {R package version 1.0.1},
     }
 
 ## Examples
@@ -196,11 +224,14 @@ Last updated: 26 October 2026. See `NEWS.md` for changes.
 Hex image icon: Canberra Parliament House by Anna Hatzisavas from [Noun
 Project](https://thenounproject.com/browse/icons/term/canberra-parliament-house/ "Canberra Parliament House Icons")
 
-[^1]: The get2CP function does not retrieve live data from the API,
-    since retrieval in real time is currently infeasible. In addition,
-    some missing elections were identified in the current PH data.
-    Therefore the function returns PH data *with* supplementary data
-    points, documented in the Note variable.
+[^1]: `get2CP()` returns a stored copy of the Handbook’s results, with
+    any elections held since added from the Handbook (see below). Where
+    the Handbook has no result for a division, a result from another
+    source is used instead, documented in the `Note` and `source`
+    variables.
 
-[^2]: missing elections were filled in, with accompanying new unique
-    identifiers.
+[^2]: Two elections the Handbook does not list (the Wide Bay by-election
+    of 1928 and the Dickson supplementary election of 1993) are added,
+    with the package’s own identifiers and flagged `not_in_handbook`.
+    `HandbookId` gives the Handbook’s own identifier for every other
+    election.

@@ -4,11 +4,15 @@
 \alias{getPartyService}
 \title{Data on party service of MPs and senators since 1901}
 \usage{
-getPartyService(apply_errata = FALSE)
+getPartyService(apply_errata = FALSE, update = FALSE)
 }
 \arguments{
 \item{apply_errata}{if TRUE, replace values listed in \code{\link[=getErrata]{getErrata()}} with
-their corrected values. By default the Handbook's values are returned.}
+their corrected values. By default the Handbook's values are returned.
+No party service errata are listed yet, so this currently has no effect.}
+
+\item{update}{if TRUE, update the stored copy from the Handbook (about
+250 requests, two to three minutes). Defaults to FALSE.}
 }
 \value{
 a tibble. \code{handbook_flag} marks rows with a known problem in the
@@ -18,8 +22,13 @@ same day as another party record for the same person),
 any issue listed in \code{\link[=getErrata]{getErrata()}}.
 }
 \description{
-Returns a stored copy of the Handbook's party service records. The date of
-the copy is in the \code{scraped} attribute of the result.
+Returns the copy of the Handbook's party service records stored in the
+package. The Handbook has no single source for these records (each
+person's must be retrieved separately), so updating takes a few minutes and
+is optional: with \code{update = TRUE}, the records of everyone who has joined
+or served in parliament since the stored copy was taken are retrieved again.
+The date of the stored copy is in the \code{scraped} attribute of the result,
+and the date of any update in the \code{updated} attribute.
 }
 \examples{
 getPartyService()

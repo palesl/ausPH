@@ -33,3 +33,11 @@ test_that("committee end dates parse", {
   expect_s3_class(cm$end_date, "Date")
   expect_false(any(cm$end_date %in% as.Date("1900-01-01")))
 })
+
+test_that("every function returns a tibble", {
+  fns <- list(getCommitteeMembers, getElectorates, getIndividuals, getMinisters,
+              getMinistries, getOccupations, getParliaments, getParties,
+              getQualifications, getSchools, getShadowMinisters, getSittingDates)
+  for (f in fns) expect_s3_class(f(), "tbl_df")
+  expect_match(attr(getSittingDates(), "scraped"), "^[0-9]{4}-")
+})

@@ -7,7 +7,7 @@
 getOccupations()
 }
 \value{
-a data frame with one row per person and occupation
+a tibble with one row per person and occupation
 }
 \description{
 Data on all listed prior occupations held (both primary and secondary)

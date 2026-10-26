@@ -1,5 +1,5 @@
 #' Data on all listed Qualifications
-#' @return a data frame with one row per person and qualification
+#' @return a tibble with one row per person and qualification
 #' @export
 #'
 #' @examples

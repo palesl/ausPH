@@ -4,22 +4,29 @@
 \alias{get2CP}
 \title{Data on two candidate preferred results since 1919}
 \usage{
-get2CP(include_byelections = FALSE)
+get2CP(include_byelections = FALSE, update = TRUE)
 }
 \arguments{
 \item{include_byelections}{Choose to include house by-elections. If
 include_byelections = TRUE, by-election results are added.}
+
+\item{update}{if TRUE (the default), add results for elections listed in
+the Handbook since the stored copy was made (three requests, plus one per
+new election); if FALSE, use the stored copy only.}
 }
 \value{
 a tibble. \code{pID} links a candidate's party to \code{\link[=getParties]{getParties()}} where
 the Handbook's party name matches a party exactly; otherwise it is NA.
 }
 \description{
-Results come from a stored copy of the Handbook, supplemented with results
-the Handbook is missing (documented in the \code{Note} and \code{source} columns).
-A supplementary result is only used where the Handbook has none for that
-division and year.
+Results come from a copy of the Handbook stored in the package,
+supplemented with results the Handbook is missing (documented in the
+\code{Note} and \code{source} columns). A supplementary result is only used where the
+Handbook has none for that division and year. By default, results for any
+elections the Handbook has listed since the stored copy was made are added.
+The date of the stored copy is in the \code{scraped} attribute of the result,
+and the date of any update in the \code{updated} attribute.
 }
 \examples{
-get2CP()
+get2CP(update=FALSE)
 }

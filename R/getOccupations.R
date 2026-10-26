@@ -1,5 +1,5 @@
 #' Data on all listed prior occupations held (both primary and secondary)
-#' @return a data frame with one row per person and occupation
+#' @return a tibble with one row per person and occupation
 #' @export
 #'
 #' @examples

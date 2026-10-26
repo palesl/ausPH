@@ -3,13 +3,13 @@
 handbook_api <- "https://handbookapi.aph.gov.au/api/"
 
 # fetch a Handbook API endpoint and return the parsed JSON, or NULL with a
-# message if the API cannot be reached
-fetch_handbook <- function(endpoint){
+# message (unless quiet) if the API cannot be reached
+fetch_handbook <- function(endpoint, quiet = FALSE){
   out <- tryCatch(
     suppressWarnings(rjson::fromJSON(file = paste0(handbook_api, endpoint))),
     error = function(e) NULL
   )
-  if (is.null(out)) {
+  if (is.null(out) && !quiet) {
     message("Could not retrieve '", endpoint, "' from the Parliamentary Handbook API (",
             handbook_api, "). The service may be unavailable; please try again later.")
   }
@@ -100,8 +100,25 @@ individual_list_field <- function(fields, value_name){
     data.frame(PHID = rep(element[["PHID"]], length(values)), value = values,
                stringsAsFactors = FALSE)
   })
-  out <- do.call(rbind, rows)
+  out <- dplyr::as_tibble(do.call(rbind, rows))
   names(out)[2] <- value_name
-  rownames(out) <- NULL
   out
+}
+
+# date a stored CSV table was last built from the Handbook
+# (the .Rdata tables carry this as an attribute instead)
+stored_scrape_date <- function(table){
+  dates <- utils::read.csv(system.file("extdata", "scrape_dates.csv", package = "ausPH"),
+                           colClasses = "character")
+  dates$scraped[dates$table == table]
+}
+
+# record a table's build date in inst/extdata/scrape_dates.csv; used by the
+# scripts in data-raw/, run from the package root
+record_scrape_date <- function(table, date = Sys.Date()){
+  file <- "inst/extdata/scrape_dates.csv"
+  dates <- utils::read.csv(file, colClasses = "character")
+  dates <- dates[dates$table != table, ]
+  dates <- rbind(dates, data.frame(table = table, scraped = as.character(date)))
+  utils::write.csv(dates, file, row.names = FALSE, quote = FALSE)
 }

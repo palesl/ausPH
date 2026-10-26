@@ -4,24 +4,38 @@
 \alias{getParlService}
 \title{Data on parliamentary tenures of MPs and senators since 1901}
 \usage{
-getParlService(chamber = c("all", "house", "senate"), apply_errata = FALSE)
+getParlService(
+  chamber = c("all", "house", "senate"),
+  apply_errata = FALSE,
+  update = TRUE
+)
 }
 \arguments{
 \item{chamber}{choose to include MPs ("house"), senators ("senate") or both ("all").}
 
 \item{apply_errata}{if TRUE, replace values listed in \code{\link[=getErrata]{getErrata()}} with
 their corrected values. By default the Handbook's values are returned.}
+
+\item{update}{if TRUE (the default), retrieve the current data from the
+Handbook; if FALSE, use the stored copy.}
 }
 \value{
-a tibble. \code{handbook_flag} marks rows with a known problem in the
-Handbook: \code{overlapping_term} (the term starts before the member's
-previous term ends), \code{placeholder_end_date} (the Handbook has 1900-01-01,
-returned as NA) and any issue listed in \code{\link[=getErrata]{getErrata()}}.
+a tibble. \code{DateEnd} is NA for terms that have not ended.
+\code{handbook_flag} marks rows with a known problem in the Handbook:
+\code{overlapping_term} (the term starts before the member's previous term
+ends), \code{placeholder_end_date} (a term that is not the member's latest has
+no end date in the Handbook) and any issue listed in \code{\link[=getErrata]{getErrata()}}.
 }
 \description{
-Returns a stored copy of the Handbook's parliamentary service records. The
-date of the copy is in the \code{scraped} attribute of the result.
+By default the whole table is retrieved from the Handbook (one request).
+If the Handbook cannot be reached, or \code{update = FALSE}, the copy stored in
+the package is returned instead. The date the data was retrieved is in the
+\code{scraped} attribute of the result.
 }
 \examples{
+\donttest{
 getParlService(chamber="house")
+}
+# the copy stored in the package, without querying the Handbook
+getParlService(chamber="house", update=FALSE)
 }

@@ -7,7 +7,7 @@
 getQualifications()
 }
 \value{
-a data frame with one row per person and qualification
+a tibble with one row per person and qualification
 }
 \description{
 Data on all listed Qualifications
