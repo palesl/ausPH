@@ -39,6 +39,12 @@ At present, the package contains the following functions:
   1901) 
 - `getErrata` (Known errors in the Handbook, with corrections)
 
+## Data map
+
+<img width="1205" height="1093" alt="image" src="https://github.com/user-attachments/assets/289701d7-043f-4a53-aaa8-afd2ccc7dcba" />
+Caption: Linkage between primary and foreign keys. Hansard speeches are
+in development.
+
 ## Errors in the Handbook
 
 The Handbook is an excellent source, but it contains some errors, and
