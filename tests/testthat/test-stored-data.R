@@ -70,3 +70,20 @@ test_that("every function backed by stored data records its scrape date", {
     expect_match(attr(dat, "scraped"), "^[0-9]{4}-[0-9]{2}-[0-9]{2}$")
   }
 })
+
+test_that("sitting date errata match Hansard", {
+  flag_on <- function(dat, date) dat$handbook_flag[dat$Date == as.Date(date)]
+  s <- getSittingDates(update = FALSE)
+
+  # the Senate sat on these days (Hansard exists), as the Handbook says
+  expect_equal(flag_on(s, "1928-03-14"), NA_character_)
+  expect_equal(flag_on(s, "1997-03-17"), NA_character_)
+  expect_equal(flag_on(s, "2008-02-05"), "chamber_did_not_sit")
+  expect_equal(flag_on(s, "1996-12-13"), "continuation_of_previous_sitting")
+
+  fixed <- getSittingDates(apply_errata = TRUE, update = FALSE)
+  day <- fixed[fixed$Date == as.Date("1996-12-13"), ]
+  expect_false(day$RepsSitting)
+  expect_true(day$SenateSitting)
+  expect_true(fixed$SenateSitting[fixed$Date == as.Date("1997-03-17")])
+})

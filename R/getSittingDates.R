@@ -12,7 +12,7 @@
 #'
 #' @return a tibble with one row per sitting date and whether each chamber
 #'   sat. `handbook_flag` marks dates listed in [getErrata()], e.g.
-#'   `chamber_did_not_sit`.
+#'   `chamber_did_not_sit` or `continuation_of_previous_sitting`.
 #' @export
 #'
 #' @examples

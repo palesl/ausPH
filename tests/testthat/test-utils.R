@@ -26,22 +26,22 @@ test_that("records_to_tibble keeps records with empty or nested fields", {
 })
 
 test_that("errata are flagged by default and applied on request", {
-  dat <- data.frame(Date = as.Date(c("1928-03-14", "1928-03-15")),
-                    SenateSitting = c(TRUE, TRUE), handbook_flag = NA_character_)
+  dat <- data.frame(Date = as.Date(c("2008-02-05", "2008-02-06")),
+                    RepsSitting = c(TRUE, TRUE), handbook_flag = NA_character_)
   keys <- as.character(dat$Date)
 
   flagged <- apply_errata_table(dat, "sitting_dates", keys, apply_errata = FALSE)
-  expect_equal(flagged$SenateSitting, c(TRUE, TRUE))
+  expect_equal(flagged$RepsSitting, c(TRUE, TRUE))
   expect_equal(flagged$handbook_flag, c("chamber_did_not_sit", NA))
 
   corrected <- apply_errata_table(dat, "sitting_dates", keys, apply_errata = TRUE)
-  expect_equal(corrected$SenateSitting, c(FALSE, TRUE))
+  expect_equal(corrected$RepsSitting, c(FALSE, TRUE))
   expect_equal(corrected$handbook_flag, c("chamber_did_not_sit [corrected]", NA))
 })
 
 test_that("an erratum lapses once the Handbook value changes", {
-  dat <- data.frame(Date = as.Date("1928-03-14"), SenateSitting = FALSE,
+  dat <- data.frame(Date = as.Date("2008-02-05"), RepsSitting = FALSE,
                     handbook_flag = NA_character_)
-  out <- apply_errata_table(dat, "sitting_dates", "1928-03-14", apply_errata = TRUE)
+  out <- apply_errata_table(dat, "sitting_dates", "2008-02-05", apply_errata = TRUE)
   expect_equal(out$handbook_flag, NA_character_)
 })

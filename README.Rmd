@@ -24,7 +24,8 @@ of the Commonwealth of Australia](https://handbook.aph.gov.au/) and
 return ready-to-analyse data, formatted as a `tibble`. The package
 relies on the data from the Handbook site, which is subject to change
 and improvement. Functions that query the Handbook's API return `NULL`,
-with a message, if the API cannot be reached.
+with a message, if the API cannot be reached. The API itself is
+documented at <https://handbookapi.aph.gov.au/swagger/ui/index>.
 
 At present, the package contains the following functions:
 
@@ -101,7 +102,7 @@ full, so the package stores a copy and, by default, brings it up to date
 when you call the function:
 
 | Function | By default | Requests |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | `getParlService()` | retrieves the whole table from the Handbook | 1 |
 | `getElections()` | adds elections listed since the stored copy | 2 |
 | `get2CP()` | adds results for elections since the stored copy | about 3, plus 1 per new election |

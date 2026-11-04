@@ -16,7 +16,7 @@ copy from the Handbook; if FALSE, use the stored copy only.}
 \value{
 a tibble with one row per sitting date and whether each chamber
 sat. \code{handbook_flag} marks dates listed in \code{\link[=getErrata]{getErrata()}}, e.g.
-\code{chamber_did_not_sit}.
+\code{chamber_did_not_sit} or \code{continuation_of_previous_sitting}.
 }
 \description{
 Dates up to the end of the stored copy come from the package; by default,

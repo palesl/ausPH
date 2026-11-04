@@ -25,7 +25,7 @@ test_that("getSittingDates returns dates and flags errata", {
   s <- getSittingDates()
   expect_s3_class(s$Date, "Date")
   expect_false(any(duplicated(s$Date)))
-  expect_equal(s$handbook_flag[s$Date == as.Date("1997-03-17")], "chamber_did_not_sit")
+  expect_equal(s$handbook_flag[s$Date == as.Date("2008-02-05")], "chamber_did_not_sit")
 })
 
 test_that("committee end dates parse", {

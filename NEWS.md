@@ -1,3 +1,22 @@
+# ausPH 1.0.2
+
+## Errata corrections
+
+* Removed two errata that were wrong. The Senate did sit on 14 March 1928 and
+  17 March 1997, as the Handbook says: Hansard exists for both days. In
+  1.0.0 and 1.0.1 these days were wrongly flagged `chamber_did_not_sit`, and
+  `apply_errata = TRUE` wrongly set `SenateSitting` to `FALSE`. If you used
+  `getSittingDates(apply_errata = TRUE)`, re-run it (#4).
+* Added an erratum for 13 December 1996: the Handbook lists a House sitting,
+  but this was the sitting of 12 December continuing, so one sitting was
+  counted twice. It is flagged with a new code,
+  `continuation_of_previous_sitting`. The Senate did sit that day (#5).
+* `getErrata()` now covers 13 errors.
+
+## Other changes
+
+* README: added a link to the Handbook API's documentation (#3).
+
 # ausPH 1.0.1
 
 ## Live updates
