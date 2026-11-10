@@ -1,0 +1,29 @@
+# Citation metadata for ausPH. GitHub's "Cite this repository" button and
+# Zenodo's archive of each GitHub release are built from this file.
+# Update `version` and `date-released` with each release.
+cff-version: 1.2.0
+message: "If you use ausPH, please cite the version you used. Each release is archived on Zenodo with its own DOI."
+type: software
+title: "ausPH: Retrieve Data from the Parliamentary Handbook of the Commonwealth of Australia"
+abstract: >-
+  Retrieves data from the Australian Parliamentary Library's Parliamentary
+  Handbook and returns it as tidy tables: members and senators, their
+  parliamentary and party service, ministries, shadow ministries, presiding
+  officers, committees, parties, electorates, parliaments, sitting dates,
+  elections and two candidate preferred results. Known errors in the
+  Handbook are flagged, and can optionally be corrected from a documented
+  errata table.
+authors:
+  - family-names: Leslie
+    given-names: Pat
+    orcid: "https://orcid.org/0000-0002-9218-8981"
+version: 1.1.0
+date-released: "2026-11-10"
+license: MIT
+repository-code: "https://github.com/palesl/ausPH"
+url: "https://github.com/palesl/ausPH"
+keywords:
+  - Australia
+  - parliament
+  - Parliamentary Handbook
+  - R

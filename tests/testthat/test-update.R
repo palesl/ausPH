@@ -40,3 +40,11 @@ test_that("party service is fetched in the stored layout", {
   expect_equal(sort(paste(fresh$PHID, fresh$Party, fresh$DateStart)),
                sort(paste(stored$PHID, stored$Party, stored$DateStart)[stored$PHID %in% people$PHID]))
 })
+
+test_that("getPresidingOfficers retrieves the whole table live", {
+  live <- getPresidingOfficers()
+  stored <- getPresidingOfficers(update = FALSE)
+  expect_equal(attr(live, "scraped"), as.character(Sys.Date()))
+  expect_gte(nrow(live), nrow(stored))
+  expect_named(live, names(stored))
+})

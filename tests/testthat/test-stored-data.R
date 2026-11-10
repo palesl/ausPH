@@ -87,3 +87,25 @@ test_that("sitting date errata match Hansard", {
   expect_true(day$SenateSitting)
   expect_true(fixed$SenateSitting[fixed$Date == as.Date("1997-03-17")])
 })
+
+test_that("presiding officers cover the Speakers and Presidents", {
+  po <- getPresidingOfficers(update = FALSE)
+  expect_named(po, c("PHID", "DisplayName", "Office", "Chamber", "DateStart", "DateEnd",
+                     "Note", "handbook_flag"))
+  expect_true(all(po$Chamber %in% c("House", "Senate")))
+  expect_false(any(duplicated(po[, c("PHID", "Office", "DateStart")])))
+  expect_match(attr(po, "scraped"), "^[0-9]{4}-[0-9]{2}-[0-9]{2}$")
+
+  speakers <- getPresidingOfficers("house", "Speaker of the House of Representatives",
+                                   update = FALSE)
+  expect_true(all(speakers$Chamber == "House"))
+  # holders the Hansard often does not name
+  expect_true(all(c("CAMERON", "HALVERSON", "BURKE", "BISHOP") %in%
+                    sub(",.*", "", speakers$DisplayName)))
+  expect_equal(speakers$DateStart[1], as.Date("1901-05-09"))
+  presidents <- getPresidingOfficers("senate", "President of the Senate", update = FALSE)
+  expect_equal(presidents$DateStart[1], as.Date("1901-05-09"))
+
+  # a term ending before it starts is flagged, not dropped
+  expect_true(any(grepl("end_before_start", po$handbook_flag)))
+})

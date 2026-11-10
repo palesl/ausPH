@@ -38,6 +38,8 @@ At present, the package contains the following functions:
 - `getParlService` (data on parliamentary tenures of MPs and senators
   since 1901)
 - `getParliaments` (Data on Parliamentary terms since 1901)
+- `getPresidingOfficers` (Data on Speakers, Presidents, Chairs of
+  Committees and their deputies since 1901)
 - `getMinisters` (Data on Ministers since 1901)
 - `getShadowMinisters` (Data on Shadow Ministers since 1901)
 - `getParties` (Data on Parties since 1901)
@@ -83,10 +85,11 @@ overlap the member's previous term, or sittings recorded for a chamber
 that did not sit.
 
 The flag column is returned by `getParlService()`, `getPartyService()`,
-`getSittingDates()` and `getElections()`. Where the correct value is
+`getPresidingOfficers()`, `getSittingDates()` and `getElections()`. Where the correct value is
 known, it is listed with its evidence in `getErrata()`, and passing
 `apply_errata = TRUE` to these functions uses the corrected value
-instead (no corrections are listed yet for `getPartyService()`):
+instead (no corrections are listed yet for `getPartyService()` or
+`getPresidingOfficers()`):
 
 ``` r
 getParlService(chamber = "house", apply_errata = TRUE)
@@ -104,6 +107,7 @@ when you call the function:
 | Function | By default | Requests |
 |------------------------|------------------------|------------------------|
 | `getParlService()` | retrieves the whole table from the Handbook | 1 |
+| `getPresidingOfficers()` | retrieves the whole table from the Handbook | 2 |
 | `getElections()` | adds elections listed since the stored copy | 2 |
 | `get2CP()` | adds results for elections since the stored copy | about 3, plus 1 per new election |
 | `getSittingDates()` | adds sitting dates after the stored copy | 1 per year |

@@ -1,3 +1,30 @@
+# ausPH 1.1.0
+
+## New features
+
+* New `getPresidingOfficers()` returns the Speakers of the House, Presidents
+  of the Senate, their deputies, Chairs of Committees, temporary chairs,
+  members of the Speaker's panel and acting holders of these offices since
+  1901, with each person's `PHID` and the dates they held the office (#6).
+  It comes from the Handbook's records of parliamentary positions in one
+  request, with a stored copy for `update = FALSE` or when the Handbook
+  cannot be reached. `Chamber` is taken from the chamber the person sat in
+  when the term began, since "Chairman of Committees" and "Temporary Chairman
+  of Committees" were offices in both chambers. Rows with a problem in the
+  Handbook are flagged: one term with no start date, one ending before it
+  starts (Turley, 1909) and three starting when the person was not in
+  parliament (Cunningham, Eggins, Keane).
+
+## Citation
+
+* Each release is now archived on Zenodo with its own DOI, so work built on
+  ausPH can cite the exact version it used (#7). `CITATION.cff` holds the
+  citation metadata, and `citation("ausPH")` gives the reference in R.
+
+## Other changes
+
+* The data map in the README adds `getPresidingOfficers()`.
+
 # ausPH 1.0.2
 
 ## Errata corrections

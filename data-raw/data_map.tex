@@ -76,6 +76,16 @@
     \nodepart{six} ...
 };
 
+\node[header] (presiding-header) at (-12.5,-3) {Presiding Officers$^\dagger$\\getPresidingOfficers()};
+\node[table=6, below=0.1cm of presiding-header.south] (presiding) {
+    \textbf{\underline{PHID}}
+    \nodepart{two} \textbf{\underline{Office}}
+    \nodepart{three} Chamber
+    \nodepart{four} \textbf{\underline{DateStart}}
+    \nodepart{five} DateEnd
+    \nodepart{six} handbook\_flag
+};
+
 \node[header] (occupations-header) at (-7,-6.5) {Occupations, Qualifications,\\Schools};
 \node[table=2, below=0.1cm of occupations-header.south] (occupations) {
     PHID
@@ -236,8 +246,9 @@
 \draw[line width=1.5pt, rounded corners=6pt] (ministers.two east) -| (bus-left);
 \draw[line width=1.5pt, rounded corners=6pt] (speeches.two east) -| (bus-left);
 \draw[line width=1.5pt, rounded corners=6pt] (occupations.text east) -| (bus-left);
+\draw[line width=1.5pt, rounded corners=6pt] (presiding.text east) -| (bus-left);
 \draw[arrow] (bus-left) -- (individuals.text west);
-\foreach \fk in {shadow.two east, ministers.two east, speeches.two east, occupations.text east}
+\foreach \fk in {shadow.two east, ministers.two east, speeches.two east, occupations.text east, presiding.text east}
     \node[fk_dot] at (\fk) {};
 
 \draw[line width=1.5pt, rounded corners=6pt] (party.text west) -| (bus-right);

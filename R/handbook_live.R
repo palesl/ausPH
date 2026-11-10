@@ -165,3 +165,25 @@ handbook_parties <- function(){
   dplyr::tibble(pID = vapply(raw$value, function(p) as.numeric(p$pID), numeric(1)),
                 Name = vapply(raw$value, function(p) trimws(p$Name), character(1)))
 }
+
+# Presiding officers and their deputies (Speakers, Presidents, Chairs of
+# Committees, Deputy Presidents, temporary chairs, the Speaker's panel and
+# acting holders), from the Handbook's records of service (record type 8,
+# "Parliamentary Positions"), in the layout of presiding_officers.Rdata.
+# One request. Returns NULL if the API cannot be reached.
+handbook_presiding_officers <- function(){
+  raw <- fetch_handbook("recordsofservice?$filter=ROSTypeID%20eq%208")
+  if (is.null(raw)) return(NULL)
+  records <- raw$value
+  field <- function(name) vapply(records, function(r) as.character(null_to_na(r[[name]])), character(1))
+  note <- trimws(field("Text1"))
+  note[note %in% ""] <- NA
+  dplyr::tibble(
+    PHID = field("PHID"),
+    DisplayName = field("DisplayName"),
+    Office = trimws(field("Value1")),
+    DateStart = field("DateStart1"),
+    DateEnd = field("DateEnd1"),
+    Note = note
+  )
+}

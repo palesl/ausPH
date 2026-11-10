@@ -14,6 +14,9 @@ test_that("updates fall back to the stored copy when the API is unreachable", {
   expect_message(s <- getSittingDates(), "stored copy")
   expect_null(attr(s, "updated"))
 
+  expect_message(po <- getPresidingOfficers(), "stored copy")
+  expect_equal(attr(po, "scraped"), attr(load_extdata("presiding_officers.Rdata"), "scraped"))
+
   expect_message(ps <- getPartyService(update = TRUE), "stored copy")
   expect_null(attr(ps, "updated"))
 })

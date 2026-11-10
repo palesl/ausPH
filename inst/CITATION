@@ -1,0 +1,15 @@
+year <- if (is.null(meta$Date)) format(Sys.Date(), "%Y") else sub("-.*", "", meta$Date)
+
+bibentry(
+  bibtype = "Manual",
+  title = "{ausPH}: Retrieve Data from the Parliamentary Handbook of the Commonwealth of Australia",
+  author = person("Pat", "Leslie", comment = c(ORCID = "0000-0002-9218-8981")),
+  year = year,
+  note = paste("R package version", meta$Version),
+  url = "https://github.com/palesl/ausPH",
+  textVersion = paste0(
+    "Leslie, P. (", year, "). ",
+    "ausPH: Retrieve Data from the Parliamentary Handbook of the Commonwealth of Australia. ",
+    "R package version ", meta$Version, ". https://github.com/palesl/ausPH"
+  )
+)
