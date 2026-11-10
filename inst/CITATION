@@ -7,9 +7,10 @@ bibentry(
   year = year,
   note = paste("R package version", meta$Version),
   url = "https://github.com/palesl/ausPH",
+  doi = "10.5281/zenodo.24095468",
   textVersion = paste0(
     "Leslie, P. (", year, "). ",
     "ausPH: Retrieve Data from the Parliamentary Handbook of the Commonwealth of Australia. ",
-    "R package version ", meta$Version, ". https://github.com/palesl/ausPH"
+    "R package version ", meta$Version, ". https://doi.org/10.5281/zenodo.24095468"
   )
 )

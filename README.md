@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24095468.svg)](https://doi.org/10.5281/zenodo.24095468)
+
 <!-- badges: end -->
 
 The goal of ausPH is to retrieve data from the [Parliamentary Handbook
@@ -94,6 +96,15 @@ for reproducibility. If the Handbook cannot be reached, these functions
 return the stored copy with a message. The date of the stored copy is in
 the `scraped` attribute and the date of any update in the `updated`
 attribute, e.g. `attr(getElections("all"), "updated")`.
+
+## Citing ausPH
+
+Each release is archived on Zenodo with its own DOI. To cite the version
+you used, run `citation("ausPH")`, or find the version’s DOI on
+[Zenodo](https://doi.org/10.5281/zenodo.24095468); that link always
+resolves to the latest version. Because the Handbook changes over time,
+use `update = FALSE` with the stored data for results that can be
+reproduced with the same version.
 
 ## Installation
 
