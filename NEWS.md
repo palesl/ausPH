@@ -1,4 +1,4 @@
-# ausPH (development version)
+# ausPH 1.1.1
 
 * ausPH is on CRAN (1.0.1, published 12 November 2026); the README now
   installs from CRAN, with the GitHub version for features not yet released.
