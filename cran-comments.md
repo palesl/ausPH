@@ -22,7 +22,7 @@ the build). No function, example or test in the package writes files.
 ## Test environments
 
 * local macOS 26.5 (aarch64), R 4.6.1: R CMD check --as-cran
-* win-builder, R-devel: R CMD check --as-cran
+* win-builder, R-devel (2026-11-14 r90890 ucrt): R CMD check --as-cran
 
 ## R CMD check results
 
