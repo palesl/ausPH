@@ -17,6 +17,8 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 
+[![CRAN
+status](https://www.r-pkg.org/badges/version/ausPH)](https://CRAN.R-project.org/package=ausPH)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24095468.svg)](https://doi.org/10.5281/zenodo.24095468)
 
 <!-- badges: end -->
@@ -121,19 +123,18 @@ return the stored copy with a message. The date of the stored copy is in
 the `scraped` attribute and the date of any update in the `updated`
 attribute, e.g. `attr(getElections("all"), "updated")`.
 
-## Citing ausPH
-
-Each release is archived on Zenodo with its own DOI. To cite the version
-you used, run `citation("ausPH")`, or find the version's DOI on
-[Zenodo](https://doi.org/10.5281/zenodo.24095468); that link always
-resolves to the latest version. Because the Handbook changes over time,
-use `update = FALSE` with the stored data for results that can be
-reproduced with the same version.
-
 ## Installation
 
-You can install the development version of ausPH from
-[GitHub](https://github.com/palesl/ausPH) with:
+Install the released version of ausPH from
+[CRAN](https://CRAN.R-project.org/package=ausPH) with:
+
+``` r
+install.packages("ausPH")
+```
+
+Or install the development version from
+[GitHub](https://github.com/palesl/ausPH), which may have features not
+yet on CRAN (see `NEWS.md`):
 
 ``` r
 # install.packages("remotes")
@@ -142,23 +143,12 @@ remotes::install_github("palesl/ausPH")
 
 ## Citation
 
-Please cite this package as the following:
-
-> Leslie, Pat. 2026. “ausPH: An R Package to Retrieve Data from the
-> Parliamentary Handbook of the Commonwealth of Australia.” R package
-> version 1.0.1. <https://github.com/palesl/ausPH>.
-
-Bibtex format entry:
-
-```         
-@misc{leslie_ausph_2026,
-    title = {{ausPH}: {An} {R} package to retrieve data from the {Parliamentary} {Handbook} of the {Commonwealth} of {Australia}.},
-    url = {https://github.com/palesl/ausPH},
-    author = {Leslie, Pat},
-    year = {2026},
-    note = {R package version 1.0.1},
-}
-```
+Each release is archived on Zenodo with its own DOI. To cite the version
+you used, run `citation("ausPH")`, or find the version's DOI on
+[Zenodo](https://doi.org/10.5281/zenodo.24095468); that link always
+resolves to the latest version. Because the Handbook changes over time,
+use `update = FALSE` with the stored data for results that can be
+reproduced with the same version.
 
 ## Examples
 
@@ -183,7 +173,7 @@ get2CP()
 getErrata()
 ```
 
-Last updated: 26 October 2026. See `NEWS.md` for changes.
+Last updated: 16 November 2026. See `NEWS.md` for changes.
 
 ## Image Attribution
 

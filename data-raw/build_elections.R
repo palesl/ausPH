@@ -12,6 +12,7 @@
 # Run from the package root.
 
 devtools::load_all()
+source("data-raw/helpers.R")
 
 curated<-readxl::read_excel("data-raw/ElectionDates.xlsx")
 curated$DateElection<-as.Date(curated$DateElection)

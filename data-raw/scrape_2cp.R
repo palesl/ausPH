@@ -10,6 +10,7 @@
 # Run from the package root, after build_elections.R.
 
 devtools::load_all()
+source("data-raw/helpers.R")
 
 elections<-readr::read_csv("inst/extdata/elections.csv", show_col_types=FALSE)|>
   dplyr::filter(Reps, !Byelection, !SupplementaryElection, Year >= 1919)

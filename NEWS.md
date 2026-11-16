@@ -1,3 +1,12 @@
+# ausPH (development version)
+
+* ausPH is on CRAN (1.0.1, published 12 November 2026); the README now
+  installs from CRAN, with the GitHub version for features not yet released.
+* The internal helper that records when a stored table was built, which
+  wrote into the package source, has moved from the package to
+  `data-raw/helpers.R`, as no package code may write to the user's
+  filespace (CRAN review of 1.0.1).
+
 # ausPH 1.1.0
 
 ## New features

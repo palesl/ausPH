@@ -112,13 +112,3 @@ stored_scrape_date <- function(table){
                            colClasses = "character")
   dates$scraped[dates$table == table]
 }
-
-# record a table's build date in inst/extdata/scrape_dates.csv; used by the
-# scripts in data-raw/, run from the package root
-record_scrape_date <- function(table, date = Sys.Date()){
-  file <- "inst/extdata/scrape_dates.csv"
-  dates <- utils::read.csv(file, colClasses = "character")
-  dates <- dates[dates$table != table, ]
-  dates <- rbind(dates, data.frame(table = table, scraped = as.character(date)))
-  utils::write.csv(dates, file, row.names = FALSE, quote = FALSE)
-}
